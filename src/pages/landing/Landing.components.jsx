@@ -1,10 +1,33 @@
 import React from "react";
 
-const Landing = () => {
-  return (
-    <div>
+import { 
+  LandingContainer,
+  LandingLogo,
+  LandingButtonContainer,
+  LandingButton,
+} from "./Landing.styles";
 
-    </div>
+import { useNavigate } from "react-router-dom";
+
+const Landing = () => {
+  const navigate = useNavigate();
+
+  const onClickRegister = () => {
+    navigate("/register");
+  };
+
+  const onClickLogin = () => {
+    navigate("/login");
+  };
+
+  return (
+    <LandingContainer>
+      <LandingLogo>로고</LandingLogo>
+      <LandingButtonContainer>
+        <LandingButton onClick={onClickRegister}>회원가입</LandingButton>
+        <LandingButton onClick={onClickLogin}>로그인</LandingButton>
+      </LandingButtonContainer>
+    </LandingContainer>
   )
 }
 
