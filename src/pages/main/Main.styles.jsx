@@ -5,7 +5,6 @@ export const MainContainer = styled.div`
   flex-direction: column;
   align-items: center;
   max-width: 400px;
-  height: 100%;
 `;
 
 export const Header = styled.div`

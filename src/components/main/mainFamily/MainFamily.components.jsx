@@ -11,25 +11,25 @@ import MainFamilySendMessage from "./mainFamilySendMessage/mainFamilySendMessage
 const familyList = [
   {
     familyNum: 0,
-    profile: "https://picsum.photos/200",
+    profile: "https://fastly.picsum.photos/id/435/200/200.jpg?hmac=yk7-HtvV0x2Z6OB4YhbyAbYxX0nQQCNTzs_MgegSkcE",
     time: "11:24",
     message: "회의하고 있어요",
   },
   {
     familyNum: 1,
-    profile: "https://picsum.photos/200",
+    profile: "https://fastly.picsum.photos/id/517/200/200.jpg?hmac=7n69zdD4qSZs14zMRZPUfLGKHFEIR9jTpoSEN1o990E",
     time: "",
     message: "",
   },
   {
     familyNum: 2,
-    profile: "https://picsum.photos/200",
+    profile: "https://fastly.picsum.photos/id/284/200/200.jpg?hmac=_el2jO-f8UzHfdcTCAXQOD8XX2N6jqVZHwvC23Xm8p8",
     time: "12:08",
     message: "수업듣고 있어요",
   },
   {
     familyNum: 3,
-    profile: "https://picsum.photos/200",
+    profile: "https://fastly.picsum.photos/id/562/200/200.jpg?hmac=F4ylYRNFPH6rDzYo48_NUieJXXI2yaMl9ElwGeFQHZo",
     time: "02:24",
     message: "쉬고 있어요",
   },
