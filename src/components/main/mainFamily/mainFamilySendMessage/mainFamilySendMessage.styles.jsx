@@ -24,7 +24,7 @@ export const MainFamilySendMessageProfileContainer = styled.div`
   gap: 10px;
 `;
 
-export const MainFamilySendMessageProfile = styled.div`
+export const MainFamilySendMessageProfile = styled.img`
   width: 56px;
   height: 56px;
   border-radius: 56px;

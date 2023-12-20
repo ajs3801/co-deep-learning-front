@@ -11,25 +11,30 @@ import MainFamilySendMessage from "./mainFamilySendMessage/mainFamilySendMessage
 const familyList = [
   {
     familyNum: 0,
+    profile: "https://picsum.photos/200",
     time: "11:24",
     message: "회의하고 있어요",
   },
   {
     familyNum: 1,
+    profile: "https://picsum.photos/200",
     time: "",
     message: "",
   },
   {
     familyNum: 2,
+    profile: "https://picsum.photos/200",
     time: "12:08",
     message: "수업듣고 있어요",
   },
   {
     familyNum: 3,
+    profile: "https://picsum.photos/200",
     time: "02:24",
     message: "쉬고 있어요",
   },
 ]
+
 const MainFamily = () => {
   const [gridRow, setGridRow] = useState(1);
   
@@ -44,7 +49,7 @@ const MainFamily = () => {
         {
           familyList.map((family) => {
             return (
-              <MainFamilyContent key={family.familyNum} familyNum={family.familyNum} time={family.time} message={family.message}/>
+              <MainFamilyContent key={family.familyNum} familyNum={family.familyNum} time={family.time} message={family.message} profile={family.profile}/>
             );
           })
         }
