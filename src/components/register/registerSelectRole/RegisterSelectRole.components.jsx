@@ -21,12 +21,12 @@ const RegisterSelectRole = ({setRole, setSelectRole}) => {
   return (
     <RegisterSelectRoleContainer>
       <RegisterRoleContainer onClick={onClickParent}>
-        <RegisterRoleImgContainer />
+        <RegisterRoleImgContainer>👵🏻</RegisterRoleImgContainer>
         <RegisterRoleLabel>부모</RegisterRoleLabel>
       </RegisterRoleContainer>
 
       <RegisterRoleContainer onClick={onClickChild}>
-        <RegisterRoleImgContainer />
+        <RegisterRoleImgContainer>👧🏻</RegisterRoleImgContainer>
         <RegisterRoleLabel>자녀</RegisterRoleLabel>
       </RegisterRoleContainer>
     </RegisterSelectRoleContainer>

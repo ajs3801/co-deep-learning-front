@@ -5,8 +5,8 @@ export const RegisterSelectRoleContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  width: 100%;
-  height: 150px;
+  width: 75%;
+  height: 100vh;
   gap: 20px;
 `;
 
@@ -22,6 +22,8 @@ export const RegisterRoleImgContainer = styled.div`
   height: 120px;
   border-radius: 8px;
   background-color: #FFF;
+  font-size: 80px;
+  text-align: center;
 `;
 
 export const RegisterRoleLabel = styled.p`
