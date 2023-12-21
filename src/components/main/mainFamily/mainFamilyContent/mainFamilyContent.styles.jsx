@@ -15,13 +15,14 @@ export const MainFamilyContentHolder = styled.div`
   gap: 10px;
 `
 
-export const MainFamilyProfile = styled.div`
+export const MainFamilyProfile = styled.img`
   width: 40px;
   height: 40px;
   border-radius: 40px;
   background-color: grey;
   position: absolute;
   top: -20px;
+  border: none;
 `;
 
 export const MainFamilyTime = styled.div`
