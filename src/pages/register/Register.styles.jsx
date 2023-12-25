@@ -38,6 +38,7 @@ export const RegisterContainer = styled.div`
   justify-content: center;
   width: 100%;
   max-width: 400px;
+  overflow: scroll;
 `;
 
 export const RegisterContent = styled.div`
