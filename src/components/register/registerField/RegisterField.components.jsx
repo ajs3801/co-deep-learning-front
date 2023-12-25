@@ -14,10 +14,10 @@ const RegisterField = () => {
   const navigate = useNavigate();
 
   const [isEmail, setIsEmail] = useState(true);
-  const [isName, setIsName] = useState(false);
-  const [isID, setIsID] = useState(false);
-  const [isPassword, setIsPassword] = useState(false);
-  const [isSubmit, setIsSubmit] = useState(false);
+  const [isName, setIsName] = useState(true);
+  const [isID, setIsID] = useState(true);
+  const [isPassword, setIsPassword] = useState(true);
+  const [isSubmit, setIsSubmit] = useState(true);
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
