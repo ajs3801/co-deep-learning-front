@@ -8,6 +8,7 @@ import FindFamily from "./pages/FindFamily/FindFamily.components";
 import Login from "./pages/login/Login.components";
 import Register from "./pages/register/Register.components";
 import RegisterCreate from "./pages/RegisterCreate/RegisterCreate.components";
+import QuickAnswer from "./pages/QuickAnswer/QuickAnswer.components";
 
 const Router = () => {
   return (
@@ -16,6 +17,7 @@ const Router = () => {
         <Route path="/" element={<Landing />} />
         <Route path="/main" element={<Main />} />
         <Route path="/main/find" element={<FindFamily />}/>
+        <Route path="/main/answer" element={<QuickAnswer />}/>
         <Route path="/register" element={<Register />} />
         <Route path="/register/create" element={<RegisterCreate />}/>
         <Route path="/login" element={<Login />} />
