@@ -1,11 +1,38 @@
 import React from "react";
 
+import { 
+  FindFamilyContainer,
+  FindFamilyHeader,
+  FindFamilyBackIcon,
+  FindFamilyContent,
+} from "./FindFamily.styles";
+
+import FindFamilyDown from "../../components/findFamily/FindFamilyDown/FindFamilyDown.components";
+import FindFamilyUp from "../../components/findFamily/FindFamilyUp/FindFamilyUp.components";
+
+import backIcon from "../../assets/images/backicon.svg";
+
+import { useNavigate } from "react-router-dom";
+
 const FindFamily = () => {
+  const navigate = useNavigate();
+
+  const onClickBackIcon = () => {
+    navigate(-1);
+  };
 
   return (
-    <div>
+    <FindFamilyContainer>
+      <FindFamilyHeader>
+        <FindFamilyBackIcon src={backIcon} onClick={onClickBackIcon}/>
+          가족 찾기
+      </FindFamilyHeader>
 
-    </div>
+      <FindFamilyContent>
+        <FindFamilyUp />
+        <FindFamilyDown />
+      </FindFamilyContent>
+    </FindFamilyContainer>
   );
 };
 

@@ -25,7 +25,7 @@ const RegisterCreateContent = () => {
   };
 
   const onClickLogin = () => {
-    navigate("/main");
+    navigate("/main/find");
   };
 
   return (

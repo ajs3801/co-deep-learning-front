@@ -26,7 +26,7 @@ const RegisterCreate = () => {
         <LoginBackIcon onClick={onClickBackIcon} src={backIcon} />
         가족 아이디 만들기
       </LoginHeader>
-
+      
       <RegisterCreateContent />
     </LoginContainer>
   );
