@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { 
   FindFamilyContainer,
@@ -16,6 +16,7 @@ import { useNavigate } from "react-router-dom";
 
 const FindFamily = () => {
   const navigate = useNavigate();
+  const [isPassword, setIsPassword] = useState(false);
 
   const onClickBackIcon = () => {
     navigate(-1);
@@ -29,8 +30,8 @@ const FindFamily = () => {
       </FindFamilyHeader>
 
       <FindFamilyContent>
-        <FindFamilyUp />
-        <FindFamilyDown />
+        <FindFamilyUp isPassword={isPassword} setIsPassword={setIsPassword}/>
+        <FindFamilyDown isPassword={isPassword} setIsPassword={setIsPassword}/>
       </FindFamilyContent>
     </FindFamilyContainer>
   );

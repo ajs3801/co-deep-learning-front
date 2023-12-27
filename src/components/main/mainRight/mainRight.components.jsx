@@ -1,10 +1,14 @@
 import React from "react";
 
+import QuickAnswerHolder from "../../quickAnswer/QuickAnswer.components";
+
+import { MainRightContainer } from "./mainRight.styles";
+
 const MainRight = () => {
   return (
-    <div>
-      Right
-    </div>
+    <MainRightContainer>
+      <QuickAnswerHolder style={{marginTop: "10px"}} />
+    </MainRightContainer> 
   )
 };
 

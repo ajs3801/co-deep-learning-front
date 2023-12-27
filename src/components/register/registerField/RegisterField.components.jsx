@@ -53,7 +53,7 @@ const RegisterField = () => {
   };
 
   const onClickSubmit = () => {
-    navigate("/main");
+    navigate("/main/find");
   }
 
   return (

@@ -9,18 +9,30 @@ import {
 
 import { useNavigate } from "react-router-dom";
 
-const FindFamilyDown = () => {
+const FindFamilyDown = ({isPassword, setIsPassword}) => {
   const navigate = useNavigate();
-
-  const [nextButton, setNextButton] = useState("다음");
 
   const onClickCreateId = () => {
     navigate("/register/create");
   };
 
+  const onClickNextButton = () => {
+    setIsPassword(true);
+  };
+
+  const onClickEnterButton = () => {
+    navigate("/main/answer");
+  };
+
   return (
     <FindFamilyDownContainer>
-      <NextButton>{nextButton}</NextButton>
+      {
+        isPassword ? (
+          <NextButton onClick={onClickEnterButton}>입장하기</NextButton>
+        ) : (
+          <NextButton onClick={onClickNextButton}>다음</NextButton>
+        )
+      }
       <FindFamilyDownText>아직 가족 아이디가 없어요!</FindFamilyDownText>
       <FindFamilyDownCreateText onClick={onClickCreateId}>가족 아이디 만들기</FindFamilyDownCreateText>
     </FindFamilyDownContainer>
