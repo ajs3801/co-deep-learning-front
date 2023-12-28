@@ -5,6 +5,7 @@ export const MainFamilyHolder = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 56px;
 `;
 
 export const MainFamilyContainer = styled.div`
