@@ -6,4 +6,5 @@ export const MainRightContainer = styled.div`
   max-width: 400px;
   margin: auto;
   overflow: scroll;
+  margin-top: -30px;
 `;

@@ -4,7 +4,9 @@ export const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   max-width: 400px;
+  height: calc(var(--vh, 1vh) * 100 + 48px);
 `;
 
 export const Header = styled.div`

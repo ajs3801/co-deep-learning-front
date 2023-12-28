@@ -7,7 +7,7 @@ import { MainRightContainer } from "./mainRight.styles";
 const MainRight = () => {
   return (
     <MainRightContainer>
-      <QuickAnswerHolder style={{marginTop: "10px"}} />
+      <QuickAnswerHolder />
     </MainRightContainer> 
   )
 };

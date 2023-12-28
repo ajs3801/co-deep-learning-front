@@ -3,18 +3,24 @@ import styled from "@emotion/styled";
 export const MainPlanContainer = styled.div`
   display: flex;
   flex-direction: column;
-
+  margin: auto;
 `;
 
 export const MainPlanMemberContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(5, minmax(42px, 56px));
-  grid-template-rows: repeat(1, minmax(42px, 56px));
+  grid-template-columns: repeat(5, minmax(36px, 56px));
+  grid-template-rows: repeat(1, minmax(36px, 56px));
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 60px;
   margin-top: 30px;
   gap: 20px;
+  @media (max-width: 300px) {
+    gap: 10px;
+    grid-template-columns: repeat(5, minmax(36px, 48px));
+    grid-template-rows: repeat(1, minmax(36px, 48px));
+  }
 `;
 
 export const MainPlanMemberHolder = styled.div`
@@ -55,4 +61,5 @@ export const MainPlanContent = styled.div`
   width: 100%;
   height: 500px;
   background-color: #D9D9D9;
+  margin: auto;
 `;

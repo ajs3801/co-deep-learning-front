@@ -7,6 +7,7 @@ export const FindFamilyContainer = styled.div`
   justify-content: center;
   width: 100%;
   max-width: 400px;
+  height: calc(var(--vh, 1vh) * 100);
   overflow: scroll;
 `;
 

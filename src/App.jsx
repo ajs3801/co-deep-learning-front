@@ -4,8 +4,17 @@ import Router from "./router";
 import { RecoilRoot } from "recoil";
 
 import "./global.css";
+import { useEffect } from "react";
 
 function App() {
+  function setScreenSize() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  }
+  useEffect(() => {
+    setScreenSize();
+  });
+
   return (
     <AppContainer style={{ outline: 0 }}>
       <RecoilRoot>
