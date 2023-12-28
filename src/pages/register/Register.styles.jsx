@@ -35,7 +35,6 @@ export const RegisterContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 100%;
   max-width: 400px;
   height: calc(var(--vh, 1vh) * 100);
@@ -46,4 +45,5 @@ export const RegisterContent = styled.div`
   width: 100%;
   max-width: 400px;
   margin: auto;
+  margin-top: 60px;
 `;
