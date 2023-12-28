@@ -6,7 +6,7 @@ export const RegisterSelectRoleContainer = styled.div`
   align-items: center;
   margin: auto;
   width: 75%;
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   gap: 20px;
 `;
 

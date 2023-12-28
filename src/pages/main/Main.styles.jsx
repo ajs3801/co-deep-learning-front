@@ -6,7 +6,7 @@ export const MainContainer = styled.div`
   align-items: center;
   width: 100%;
   max-width: 400px;
-  height: calc(var(--vh, 1vh) * 100 + 48px);
+  height: calc(var(--vh, 1vh) * 100 + 56px);
 `;
 
 export const Header = styled.div`
@@ -32,7 +32,7 @@ export const Footer = styled.div`
   max-width: 400px;
   height: 56px;
   position: absolute;
-  top: calc(100vh - 56px);
+  bottom: -56px;
   background: #D9D9D9;
   display: flex;
   justify-content: space-evenly;

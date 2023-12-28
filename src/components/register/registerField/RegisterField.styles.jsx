@@ -3,12 +3,14 @@ import { TextareaAutosize } from '@mui/base/TextareaAutosize';
 
 export const RegisterFieldContainer = styled.div`
   width: 100%;
+  max-width: 400px;
+  height: calc(var(--vh, 1vh) * 100);
   display: flex;
   flex-direction: column;
   overflow: scroll;
-  margin-top: 56px;
   padding: 15px;
   gap: 40px;
+  margin-top: 110px;
 `;
 
 export const RegisterFieldHolder = styled.div`
