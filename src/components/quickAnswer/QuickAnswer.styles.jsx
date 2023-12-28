@@ -5,7 +5,6 @@ export const QuickAnswerContentContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: calc(var(--vh, 1vh) * 100);
   margin: auto;
   margin-top: 56px;
   margin-bottom: 20px;

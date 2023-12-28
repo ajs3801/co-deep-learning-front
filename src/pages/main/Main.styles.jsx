@@ -22,6 +22,7 @@ export const MainContent = styled.div`
   max-width: 400px;
   height: 100%;
   overflow: scroll;
+  margin-top: 56px;
 `;
 
 export const Footer = styled.div`
