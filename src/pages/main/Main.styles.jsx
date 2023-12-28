@@ -32,7 +32,7 @@ export const Footer = styled.div`
   max-width: 400px;
   height: 56px;
   position: absolute;
-  bottom: -56px;
+  bottom: 0px;
   background: #D9D9D9;
   display: flex;
   justify-content: space-evenly;
