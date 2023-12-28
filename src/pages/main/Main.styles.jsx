@@ -43,3 +43,12 @@ export const FooterButton = styled.button`
   height: 48px;
   background-color: #9D9D9D;
 `;
+
+export const MainEditIcon = styled.img`
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  z-index: 100;
+`;
