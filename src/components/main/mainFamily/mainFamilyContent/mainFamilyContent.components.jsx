@@ -22,8 +22,10 @@ const MainFamilyContent = ({time, message, familyNum, profile}) => {
       console.log("delete it " + familyNum);
       // delete it
       let removed = duplicatedFamily.splice(familyNum, 1);
+      
+      console.log(duplicatedFamily.splice(familyNum, 1));
     } else {
-      console.log("push it");
+      console.log("push it " + familyNum);
       // push it
       duplicatedFamily.push(familyNum);
     }

@@ -10,6 +10,8 @@ import {
   MainPlanMemberName,
 } from "./mainPlan.styles";
 
+import MainTimeTable from "./mainTimeTable/mainTimeTable.components";
+
 const currentFamily = [
   "강유진",
   "강혜진",
@@ -42,7 +44,7 @@ const MainPlan = () => {
 
       {/* content */}
       <MainPlanContent>
-        
+        <MainTimeTable />
       </MainPlanContent>
     </MainPlanContainer>
   )

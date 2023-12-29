@@ -4,6 +4,7 @@ export const MainPlanContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto;
+  height: calc(var(--vh, 1vh) * 100);
 `;
 
 export const MainPlanMemberContainer = styled.div`
@@ -58,8 +59,12 @@ export const MainPlanLabel = styled.p`
 `;
 
 export const MainPlanContent = styled.div`
-  width: 100%;
+  width: 95%;
   height: 500px;
-  background-color: #D9D9D9;
+  margin-left: 15px;
+  margin-right: 15px;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
 `;
