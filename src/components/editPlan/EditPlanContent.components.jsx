@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Setting from "../../assets/images/settingButton.svg";
 
@@ -12,8 +12,12 @@ import {
 } from "./EditPlanContent.styles";
 
 import EditPlanTimeTable from "./editPlanTimeTable/EditPlanTimeTable.components";
+import MakePlan from "./makePlan/MakePlan.components";
+import FixPlan from "./fixPlan/FixPlan.components";
 
 const EditPlanContent = () => {
+  const [showAddPlan, setShowAddPlan] = useState(true);
+  const [fixPlan, setFixPlan] = useState(false);
 
   return (
     <EditPlanContentContainer>
@@ -26,6 +30,13 @@ const EditPlanContent = () => {
       <EditPlanTimeTableContainer>
         <EditPlanTimeTable />
       </EditPlanTimeTableContainer>
+
+      {/* add plan */}
+      { showAddPlan && <MakePlan />}
+
+      {/* edit plan */}
+      { fixPlan && <FixPlan />}
+      
     </EditPlanContentContainer>
   );
 };
