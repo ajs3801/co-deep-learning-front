@@ -43,7 +43,7 @@ const Main = () => {
   };
 
   const onClickEdit = () => {
-    navigate("/main/edit");
+    navigate("/main/plan");
   };
 
   return (

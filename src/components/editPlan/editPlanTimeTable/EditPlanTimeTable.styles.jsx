@@ -1,23 +1,10 @@
 import styled from "@emotion/styled";
 
-export const MainTimeHolder = styled.div`
+export const EditPlanHolder = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
-`;
-
-export const MainTimeLabel = styled.p`
-  width: 95%;
-  display: flex;
-  justify-content: center;
-  text-align: start;
-  color: #000;
-  font-family: "Pretendard-Regular";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
 `;
 
 export const TimeTableWholeContainer = styled.div`
@@ -32,7 +19,7 @@ export const TimeTableWholeContainer = styled.div`
   padding-bottom: 10px;
 `;
 
-export const MainTimeTableContainer = styled.div`
+export const EditPlanTableContainer = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(8, 11%);
@@ -46,7 +33,7 @@ export const MainTimeTableContainer = styled.div`
 
 `;
 
-export const MainTimeTableTimeContent = styled.div`
+export const EditPlanTableTimeContent = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
@@ -54,13 +41,13 @@ export const MainTimeTableTimeContent = styled.div`
   justify-content: center;
 `;
 
-export const MainTimeTableContent = styled.div`
+export const EditPlanTableContent = styled.div`
   width: 100%;
   height: 100%;
   background-color: "#FFFFFF";
 `;
 
-export const MainTimeTableHeader = styled.div`
+export const EditPlanTableHeader = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(8, 11%);
@@ -71,7 +58,7 @@ export const MainTimeTableHeader = styled.div`
   border-bottom: 1px solid #A29A9A;
 `;
 
-export const MainTimeHeaderContent = styled.div`
+export const EditPlanHeaderContent = styled.div`
   width: 100%;
   height: 100%;
   display: flex;

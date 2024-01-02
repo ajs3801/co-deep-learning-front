@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 
 import { 
-  MainTimeTableContainer,
-  MainTimeTableContent,
-  MainTimeTableHeader,
-  MainTimeHolder,
-  MainTimeHeaderContent,
-  MainTimeTableTimeContent,
-  MainTimeLabel,
+  EditPlanHolder,
   TimeTableWholeContainer,
-} from "./mainTimeTable.styles";
+  EditPlanTableContainer,
+  EditPlanTableTimeContent,
+  EditPlanTableContent,
+  EditPlanTableHeader,
+  EditPlanHeaderContent,
+} from "./EditPlanTimeTable.styles";
 
 const timeTable = [
   {
@@ -977,42 +976,6 @@ const days = [
   "", "월", "화", "수", "목", "금", "토", "일"
 ]
 
-// const times = [
-//   "8:00",
-//   "8:30",
-//   "9:00",
-//   "9:30",
-//   "10:00",
-//   "10:30",
-//   "11:00",
-//   "11:30",
-//   "12:00",
-//   "12:30",
-//   "13:00",
-//   "13:30",
-//   "14:00",
-//   "14:30",
-//   "15:00",
-//   "15:30",
-//   "16:00",
-//   "16:30",
-//   "17:00",
-//   "17:30",
-//   "18:00",
-//   "18:30",
-//   "19:00",
-//   "19:30",
-//   "20:00",
-//   "20:30",
-//   "21:00",
-//   "21:30",
-//   "22:00",
-//   "22:30",
-//   "23:00",
-//   "23:30",
-//   "24:00",
-// ]
-
 const times = [
   "7",
   "",
@@ -1055,44 +1018,41 @@ const times = [
   "2",
 ]
 
-const MainTimeTable = () => {
-  const [content, setContent] = useState("시간을 눌러보아요")
+const EditPlanTimeTable = () => {
 
   const onClickContent = (todo) => {
-    setContent(todo);
     console.log(todo);
   }
 
   return (
-    <MainTimeHolder>
-      <MainTimeLabel>{content}</MainTimeLabel>
+    <EditPlanHolder>
       <TimeTableWholeContainer>
-        <MainTimeTableHeader>
+        <EditPlanTableHeader>
           {
-            days.map((day) => {return <MainTimeHeaderContent>{day}</MainTimeHeaderContent>})
+            days.map((day) => {return <EditPlanHeaderContent>{day}</EditPlanHeaderContent>})
           }
-        </MainTimeTableHeader>
+        </EditPlanTableHeader>
 
-        <MainTimeTableContainer>
+        <EditPlanTableContainer>
           {/* time */}
           {
             times.map((time) => {
               return (
-                <MainTimeTableTimeContent>
+                <EditPlanTableTimeContent>
                   {time}
-                </MainTimeTableTimeContent>
+                </EditPlanTableTimeContent>
               )
             })
           }
 
           {/* time block */}
           {
-            timeTable.map((time) => {return <MainTimeTableContent onClick={() => {onClickContent(time.content)}} style={{backgroundColor: `${time.backgroundColor}`}}></MainTimeTableContent>})
+            timeTable.map((time) => {return <EditPlanTableContent onClick={() => {onClickContent(time.content)}} style={{backgroundColor: `${time.backgroundColor}`}}></EditPlanTableContent>})
           }
-        </MainTimeTableContainer>
+        </EditPlanTableContainer>
       </TimeTableWholeContainer>
-    </MainTimeHolder>
+    </EditPlanHolder>
   )
 };
 
-export default MainTimeTable;
+export default EditPlanTimeTable;
