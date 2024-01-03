@@ -49,7 +49,7 @@ export const MainPlanMemberName = styled.p`
 
 export const MainPlanLabelContainer = styled.div`
   width: 95%;
-  height: 73px;
+  height: 78px;
   display: flex;
   flex-direction: column;
   border-radius: 8px;
