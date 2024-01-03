@@ -1,4 +1,5 @@
 import { createTheme } from "@mui/material";
+import "./font.css";
 
 export const conTheme = createTheme({
   palette: {
@@ -8,16 +9,13 @@ export const conTheme = createTheme({
       contrastText: "#303030",
     },
     background: {
-      default: "#D8EFBA",
+      default: "#F8F8F8",
       paper: "#FFF",
     },
   },
   typography: {
     fontFamily: [
-      '"YeongdeokSea"',
-      '"Cafe24Ssurround"',
-      '"Cafe24SsurroundAir"',
-      '"GmarketSans"',
+      '"Pretendard-Regular"',
       "-apple-system",
       "BlinkMacSystemFont",
       "system-ui",
@@ -34,14 +32,14 @@ export const conTheme = createTheme({
     MuiCssBaseline: {
       styleOverrides: {
         body: {
-          fontFamily: "Cafe24SsurroundAir",
+          fontFamily: "Pretendard-Regular",
         },
       },
     },
     MuiButton: {
       styleOverrides: {
         root: {
-          fontFamily: "Cafe24Ssurround",
+          fontFamily: "Pretendard-Regular",
         },
       },
     },

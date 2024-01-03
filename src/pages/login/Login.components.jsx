@@ -1,10 +1,32 @@
 import React from "react";
 
-const Login = () => {
-  return (
-    <div>
+import { 
+  LoginHeader, 
+  LoginContainer,
+  LoginBackIcon,
+} from "./Login.styles";
 
-    </div>
+import backIcon from "../../assets/images/backicon.svg";
+import LoginContent from "../../components/login/LoginContent/LoginContent.components";
+
+import { useNavigate } from "react-router-dom";
+
+const Login = () => {
+  const navigate = useNavigate();
+
+  const onClickBackIcon = () => {
+    navigate(-1);
+  };
+
+  return (
+    <LoginContainer>
+      <LoginHeader>
+        <LoginBackIcon onClick={onClickBackIcon} src={backIcon} />
+        로그인
+      </LoginHeader>
+
+      <LoginContent />
+    </LoginContainer>
   )
 }
 
