@@ -5,7 +5,12 @@ import {
   MainPlanMemberContainer,
   MainPlanMemberHolder,
   MainPlanMember,
+  MainPlanLabelContainer,
   MainPlanLabel,
+  MainPlanLabelBottom,
+  MainPlanLabelBottomColor,
+  MainPlanLabelBottomDate,
+  MainPlanLabelBottomPlan,
   MainPlanContent,
   MainPlanMemberName,
 } from "./mainPlan.styles";
@@ -22,6 +27,11 @@ const currentFamily = [
 
 const MainPlan = () => {
   const [selectedFamily, setSelectedFamily] = useState("강유진");
+  const [backgroundColor, setBackgroundColor] = useState("#D9B8A7");
+  const [date, setDate] = useState("월");
+  const [startTime, setStartTime] = useState("10:00");
+  const [endTime, setEndTime] = useState("12:00");
+  const [todo, setTodo] = useState("회사");
 
   return (
     <MainPlanContainer>
@@ -40,7 +50,14 @@ const MainPlan = () => {
       </MainPlanMemberContainer>
 
       {/* Label */}
-      <MainPlanLabel>{selectedFamily}님의 일정</MainPlanLabel>
+      <MainPlanLabelContainer>
+        <MainPlanLabel>{selectedFamily}님의 일정</MainPlanLabel>
+        <MainPlanLabelBottom>
+          <MainPlanLabelBottomColor style={{backgroundColor: `${backgroundColor}`}} />
+          <MainPlanLabelBottomDate>{date} {startTime} ~ {endTime}</MainPlanLabelBottomDate>
+          <MainPlanLabelBottomPlan>{todo}</MainPlanLabelBottomPlan>
+        </MainPlanLabelBottom>
+      </MainPlanLabelContainer>
 
       {/* content */}
       <MainPlanContent>

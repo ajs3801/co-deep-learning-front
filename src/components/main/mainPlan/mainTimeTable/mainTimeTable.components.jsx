@@ -1233,7 +1233,6 @@ const MainTimeTable = () => {
 
   return (
     <MainTimeHolder>
-      <MainTimeLabel>{content}</MainTimeLabel>
       <TimeTableWholeContainer>
         <MainTimeTableHeader>
           {

@@ -7,20 +7,21 @@ import {
   MainContent,
   Footer,
   FooterButton,
-  MainEditIcon,
+  MainBellIcon,
 } from "./Main.styles";
 
 import MainFamily from "../../components/main/mainFamily/MainFamily.components";
 import MainPlan from "../../components/main/mainPlan/mainPlan.components";
 import MainRight from "../../components/main/mainRight/mainRight.components";
 
-import editIcon from "../../assets/images/edit.svg";
+// import editIcon from "../../assets/images/edit.svg";
 import calendar_nonselect from "../../assets/images/home/calendar_nonselect.svg";
 import calendar_select from "../../assets/images/home/calendar_select.svg";
 import home_nonselect from "../../assets/images/home/home_nonselect.svg";
 import home_select from "../../assets/images/home/home_select.svg";
 import setting_nonselect from "../../assets/images/home/setting_nonselect.svg";
 import logo from "../../assets/images/HARU.svg";
+import bell from "../../assets/images/bell.svg";
 
 import { useNavigate } from "react-router-dom";
 
@@ -50,14 +51,14 @@ const Main = () => {
   };
 
   const onClickEdit = () => {
-    navigate("/main/plan");
+
   };
 
   return (
     <MainContainer>
       <Header>
         {
-          left && <MainEditIcon onClick={onClickEdit} src={editIcon}/>
+          center && <MainBellIcon onClick={onClickEdit} src={bell}/>
         }
         <HeaderLogo src={logo}/>
       </Header>

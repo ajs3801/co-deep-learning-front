@@ -52,11 +52,11 @@ export const FooterButton = styled.img`
   height: 32px;
 `;
 
-export const MainEditIcon = styled.img`
-  width: 48px;
-  height: 48px;
+export const MainBellIcon = styled.img`
+  width: 24px;
+  height: 24px;
   position: absolute;
-  top: 5px;
-  right: 10px;
+  top: 15px;
+  right: 15px;
   z-index: 100;
 `;

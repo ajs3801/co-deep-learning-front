@@ -47,6 +47,17 @@ export const MainPlanMemberName = styled.p`
   line-height: normal;
 `;
 
+export const MainPlanLabelContainer = styled.div`
+  width: 95%;
+  height: 73px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  background-color: #FFF;
+  margin: auto;
+  margin-top: 10px;
+`;
+
 export const MainPlanLabel = styled.p`
   color: #000;
   font-family: "Pretendard-Regular";
@@ -55,7 +66,40 @@ export const MainPlanLabel = styled.p`
   font-weight: 600;
   line-height: normal;
   padding-left: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
+`;
+
+export const MainPlanLabelBottom = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 10px;
+  gap: 10px;
+`;
+
+export const MainPlanLabelBottomColor = styled.div`
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+`;
+
+export const MainPlanLabelBottomDate = styled.div`
+  color: var(--grey-black, #1F1F1F);
+  font-family: "Pretendard-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+`;
+
+export const MainPlanLabelBottomPlan = styled.div`
+  color: var(--grey-black, #1F1F1F);
+  font-family: "Pretendard-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 `;
 
 export const MainPlanContent = styled.div`
@@ -66,5 +110,5 @@ export const MainPlanContent = styled.div`
   margin: auto;
   display: flex;
   justify-content: center;
-  margin-top: -20px;
+  margin-top: 10px;
 `;
