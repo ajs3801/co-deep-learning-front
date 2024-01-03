@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { 
   MainFamilyContentHolder,
@@ -10,8 +10,13 @@ import {
 import { useRecoilState } from "recoil";
 import { SelectFamily } from "../../../../recoil/recoil";
 
-const MainFamilyContent = ({time, message, familyNum, profile}) => {
+// familyNum은 userID가 되어도됨
+const MainFamilyContent = ({isRead, time, message, familyNum, profile}) => {
   const [family, setFamily] = useRecoilState(SelectFamily);
+  const [borderColor, setBorderColor] = useState("#FFF");
+  const [backgroundColor, setBackgroundColor] = useState("#E8ECEA");
+  const [textColor, setTextColor] = useState("#797979");
+
 
   const onClickFamilyContent = () => {
     let duplicatedFamily = JSON.parse(JSON.stringify(family));
@@ -19,28 +24,36 @@ const MainFamilyContent = ({time, message, familyNum, profile}) => {
 
     // check if currently selected
     if (family.find(element => (element===familyNum)) !== undefined) {
-      console.log("delete it " + familyNum);
+      let index = 0;
+      for ( index = 0; index < family.length; index++) {
+        if (family[index] === familyNum) {
+          break;
+        }
+      }
+
       // delete it
-      let removed = duplicatedFamily.splice(familyNum, 1);
-      
-      console.log(duplicatedFamily.splice(familyNum, 1));
+      duplicatedFamily.splice(index, 1);
     } else {
-      console.log("push it " + familyNum);
       // push it
       duplicatedFamily.push(familyNum);
     }
     
     // sort and set it
-    duplicatedFamily.sort();
     setFamily(duplicatedFamily);
-
-    console.log(duplicatedFamily);
   };
 
+  useEffect(() => {
+    if (!isRead) {
+      setBorderColor("#68B374")
+      setBackgroundColor("#68B38F");
+      setTextColor("#FFF");
+    }
+  }, []);
+
   return (
-    <MainFamilyContentHolder onClick={onClickFamilyContent}>
+    <MainFamilyContentHolder style={{border: `1px solid ${borderColor}`}} onClick={onClickFamilyContent}>
       <MainFamilyProfile src={profile} />
-      <MainFamilyTime>{time}</MainFamilyTime>
+      <MainFamilyTime style={{backgroundColor: `${backgroundColor}`, color:`${textColor}`}}>{time}</MainFamilyTime>
       {
         message ? (
           <MainFamilyMessage>{message}</MainFamilyMessage>

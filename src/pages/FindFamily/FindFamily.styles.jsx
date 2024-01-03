@@ -18,7 +18,7 @@ export const FindFamilyHeader = styled.div`
   height: 56px;
   position: absolute;
   top: 0px;
-  background: #D9D9D9;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,6 +31,8 @@ export const FindFamilyHeader = styled.div`
   font-weight: 500;
   line-height: 100%; /* 20px */
   letter-spacing: -0.4px;
+
+  border-bottom: 0.5px solid #C7C7C7;
 `;
 
 export const FindFamilyBackIcon = styled.img`

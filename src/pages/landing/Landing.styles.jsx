@@ -28,19 +28,38 @@ export const LandingButtonContainer = styled.div`
   margin-bottom: 50px;
 `;
 
-export const LandingButton = styled.button`
-  width: 70%;
+export const LandingRegisterButton = styled.button`
+  width: 75%;
   height: 50px;
   border-radius: 8px;
-  background: var(--main, #FF47B5);
+  background: var(--main, #68B38F);
   border: none;
   margin: auto;
   margin-bottom: 0px;
-  color: var(--white, #FFF);
-  /* font-family: KoddiUD OnGothic; */
-  font-size: 24px;
+  color: #FFF;
+  font-family: "Pretendard-Regular";
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 100%; /* 24px */
-  letter-spacing: -0.48px;
+  line-height: 100%; /* 20px */
+  letter-spacing: -0.4px;
+`;
+
+export const LandingLoginButton = styled.button`
+  width: 75%;
+  height: 50px;
+  border-radius: 8px;
+  background: var(--background, #F8F8F8);  
+  border: none;
+  border-radius: 8px;
+  border: 1px solid var(--grey-30, #BCBCBC);
+  margin: auto;
+  margin-bottom: 0px;
+  color: var(--grey-70, #626262);
+  font-family: "Pretendard-Regular";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 20px */
+  letter-spacing: -0.4px;
 `;

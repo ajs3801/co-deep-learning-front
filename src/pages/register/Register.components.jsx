@@ -40,7 +40,7 @@ const Register = () => {
 
       {/* Content */}
       <RegisterContent>
-        { selectRole ? (
+        { !selectRole ? (
           <RegisterField />
         ) : (
           <RegisterSelectRole setRole={setRole} setSelectRole={setSelectRole}/>

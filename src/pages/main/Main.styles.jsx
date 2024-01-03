@@ -14,7 +14,16 @@ export const Header = styled.div`
   max-width: 400px;
   height: 56px;
   position: absolute;
-  background: #D9D9D9;
+  background: var(--background, #F8F8F8);
+  border-bottom: 0.5px solid #C7C7C7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const HeaderLogo = styled.img`
+  width: 80px;
+  height: 17px;
 `;
 
 export const MainContent = styled.div`
@@ -31,17 +40,16 @@ export const Footer = styled.div`
   height: 56px;
   position: absolute;
   bottom: 0px;
-  background: #D9D9D9;
+  background: var(--grey-white, #FFF);  
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 `;
 
-export const FooterButton = styled.button`
+export const FooterButton = styled.img`
   border: none;
-  width: 48px;
-  height: 48px;
-  background-color: #9D9D9D;
+  width: 32px;
+  height: 32px;
 `;
 
 export const MainEditIcon = styled.img`

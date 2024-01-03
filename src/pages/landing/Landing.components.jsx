@@ -4,7 +4,8 @@ import {
   LandingContainer,
   LandingLogo,
   LandingButtonContainer,
-  LandingButton,
+  LandingRegisterButton,
+  LandingLoginButton,
 } from "./Landing.styles";
 
 import { useNavigate } from "react-router-dom";
@@ -24,8 +25,8 @@ const Landing = () => {
     <LandingContainer>
       <LandingLogo>로고</LandingLogo>
       <LandingButtonContainer>
-        <LandingButton onClick={onClickRegister}>회원가입</LandingButton>
-        <LandingButton onClick={onClickLogin}>로그인</LandingButton>
+        <LandingRegisterButton onClick={onClickRegister}>회원가입</LandingRegisterButton>
+        <LandingLoginButton onClick={onClickLogin}>로그인</LandingLoginButton>
       </LandingButtonContainer>
     </LandingContainer>
   )

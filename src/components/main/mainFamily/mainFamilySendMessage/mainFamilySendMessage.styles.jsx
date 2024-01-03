@@ -5,8 +5,7 @@ export const MainFamilySendMessageContainer = styled.div`
   height: 184px;
   border-radius: 8px;
   background-color: #FFF;
-  margin-top: 50px;
-
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,12 +15,36 @@ export const MainFamilySendMessageContainer = styled.div`
   position: relative;
 `;
 
+export const MainFamilyLabel = styled.p`
+  width: 90%;
+  text-align: start;
+  color: var(--grey-black, #1F1F1F);
+  font-family: "Pretendard-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.32px;
+
+  margin-top: 25px;
+`;
+
 export const MainFamilySendMessageProfileContainer = styled.div`
   position: absolute;
   top: -28px;
   display: flex;
-  justify-content: space-evenly;
-  gap: 10px;
+  justify-content: center;
+`;
+
+export const MainFamilySendMessageEmptyProfile = styled.div`
+  width: 56px;
+  height: 56px;
+  border-radius: 56px;
+  border-style: dotted;
+  margin-right: -20px;
+  border-color: #D2D2D2;
+  background-color: var(--grey-white, #FFF);
+  border-width: 1;
 `;
 
 export const MainFamilySendMessageProfile = styled.img`
@@ -29,6 +52,7 @@ export const MainFamilySendMessageProfile = styled.img`
   height: 56px;
   border-radius: 56px;
   background-color: grey;
+  margin-right: -20px;
 `;
 
 export const MainFamilySendMessageQuestionBox = styled.div`
@@ -45,9 +69,10 @@ export const MainFamilySendMessageQuestionBox = styled.div`
 export const QuestionBoxContent = styled.div`
   display: flex;
   align-items: center;
-  color: #000;
+  
+  color: var(--grey-black, #1F1F1F);
   font-family: "Pretendard-Regular";
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -60,6 +85,7 @@ export const QuestionDropDownSvgContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 `;
 
 export const QuestionDropDownSvg = styled.img`
@@ -91,14 +117,15 @@ export const QuestionDropDownContent = styled.div`
 export const MainFamilySendMessageSendItButton = styled.button`
   width: 90%;
   height: 48px;
-  border-radius: 4px;
   border: none;
-  background: #D9D9D9;
-  color: #000;
+  border-radius: 4px;
+  background: var(--main, #68B38F);  
+
+  color: var(--grey-white, #FFF);
   font-family: "Pretendard-Regular";
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: normal;
 `;
 

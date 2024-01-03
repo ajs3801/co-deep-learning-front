@@ -4,6 +4,7 @@ import {
   MainFamilySendMessageContainer,
   MainFamilySendMessageProfileContainer,
   MainFamilySendMessageProfile,
+  MainFamilySendMessageEmptyProfile,
   MainFamilySendMessageQuestionBox,
   MainFamilySendMessageSendItButton,
   QuestionBoxContent,
@@ -11,6 +12,7 @@ import {
   QuestionDropDownSvg,
   QuestionDropDown,
   QuestionDropDownContent,
+  MainFamilyLabel,
 } from "./mainFamilySendMessage.styles";
 
 import { useRecoilState } from "recoil";
@@ -18,6 +20,9 @@ import { SelectFamily } from "../../../../recoil/recoil";
 
 import dropdown from "../../../../assets/images/dropdown.svg";
 import dropup from "../../../../assets/images/dropup.svg";
+
+import Ellipse_center from "../../../../assets/images/EllipseCenter.svg";
+import Ellipse_side from "../../../../assets/images/Ellipse_side.svg";
 
 const familyList = [
   {
@@ -46,9 +51,26 @@ const familyList = [
   },
 ]
 
+const emptyArray = [
+  {
+    id: 1,
+    borderColor: "#D2D2D2",
+    zindex: 1,
+  }, 
+  {
+    id: 2,
+    borderColor: "#D2D2D2",
+    zindex: 5,
+  },
+  {
+    id:3,
+    borderColor: "#D2D2D2",
+    zindex: 1,
+  }];
+
 const MainFamilySendMessage = () => {
   const [isDropDown, setIsDropDown] = useState(false);
-  const [questionContent, setQuestionContent] = useState("뭐해?");
+  const [questionContent, setQuestionContent] = useState("뭐하는지 물어보기");
   const [family, setFamily] = useRecoilState(SelectFamily);
 
   return (
@@ -56,6 +78,16 @@ const MainFamilySendMessage = () => {
       {/* Profile container */}
       <MainFamilySendMessageProfileContainer>
         {/* list of selected family */}
+        
+        {
+          (family.length === 0) && (
+            emptyArray.map((element) => {
+              return (
+                <MainFamilySendMessageEmptyProfile key={element.id} style={{borderColor: `${element.borderColor}`, zIndex: `${element.zindex}`}} />
+              )
+            })
+          )
+        }
         {
           family.map((element) => {
             return (
@@ -77,10 +109,10 @@ const MainFamilySendMessage = () => {
 
           { isDropDown && 
             <QuestionDropDown>
-              <QuestionDropDownContent onClick={() => {setQuestionContent("뭐해?")}}>뭐해?</QuestionDropDownContent>
-              <QuestionDropDownContent onClick={() => {setQuestionContent("밥 먹었어?")}}>밥 먹었어?</QuestionDropDownContent>
-              <QuestionDropDownContent onClick={() => {setQuestionContent("집에서 밥 먹을거야?")}}>집에서 밥 먹을거야?</QuestionDropDownContent>
-              <QuestionDropDownContent onClick={() => {setQuestionContent("언제와?")}}>언제와?</QuestionDropDownContent>
+              <QuestionDropDownContent onClick={() => {setQuestionContent("뭐해?")}}>뭐하는지 물어보기</QuestionDropDownContent>
+              <QuestionDropDownContent onClick={() => {setQuestionContent("밥 먹었어?")}}>밥 먹었는지 물어보기</QuestionDropDownContent>
+              <QuestionDropDownContent onClick={() => {setQuestionContent("집에서 밥 먹을거야?")}}>집에서 밥 먹을건지 물어보기</QuestionDropDownContent>
+              <QuestionDropDownContent onClick={() => {setQuestionContent("언제와?")}}>귀가시간 물어보기</QuestionDropDownContent>
             </QuestionDropDown>
           }
         </QuestionDropDownSvgContainer>

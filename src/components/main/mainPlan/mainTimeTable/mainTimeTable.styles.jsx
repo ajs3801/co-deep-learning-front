@@ -35,11 +35,11 @@ export const TimeTableWholeContainer = styled.div`
 export const MainTimeTableContainer = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(8, 11%);
-  grid-template-rows: repeat(39, minmax(10px, 20px));
+  grid-template-columns: repeat(8, 12%);
+  grid-template-rows: repeat(39, 17px);
   justify-content: center;
-  gap: 5px;
-  row-gap: 2px;
+  column-gap: 0.5px;
+  row-gap: 0.5px;
   grid-auto-flow: column;
   padding-bottom: 20px;
   padding-top: 5px;
@@ -57,7 +57,7 @@ export const MainTimeTableTimeContent = styled.div`
 export const MainTimeTableContent = styled.div`
   width: 100%;
   height: 100%;
-  background-color: "#FFFFFF";
+  /* background-color: "#FFFFFF"; */
 `;
 
 export const MainTimeTableHeader = styled.div`

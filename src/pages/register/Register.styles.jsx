@@ -6,17 +6,16 @@ export const RegisterHeader = styled.div`
   height: 56px;
   position: absolute;
   top: 0px;
-  background: #D9D9D9;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  color: #000;
+  border-bottom: 0.5px solid #C7C7C7;
+  color: var(--grey-black, #1F1F1F);
   text-align: center;
   font-family: "Pretendard-Regular";
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 100%; /* 20px */
   letter-spacing: -0.4px;
 `;

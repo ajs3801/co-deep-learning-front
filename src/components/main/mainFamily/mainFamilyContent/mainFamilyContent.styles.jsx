@@ -44,7 +44,7 @@ export const MainFamilyTime = styled.div`
 
 export const MainFamilyMessage = styled.div`
   width: 70%;
-  height: 50px;
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
