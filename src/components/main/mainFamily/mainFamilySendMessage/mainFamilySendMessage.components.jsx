@@ -12,7 +12,6 @@ import {
   QuestionDropDownSvg,
   QuestionDropDown,
   QuestionDropDownContent,
-  MainFamilyLabel,
 } from "./mainFamilySendMessage.styles";
 
 import { useRecoilState } from "recoil";
@@ -21,8 +20,8 @@ import { SelectFamily } from "../../../../recoil/recoil";
 import dropdown from "../../../../assets/images/dropdown.svg";
 import dropup from "../../../../assets/images/dropup.svg";
 
-import Ellipse_center from "../../../../assets/images/EllipseCenter.svg";
-import Ellipse_side from "../../../../assets/images/Ellipse_side.svg";
+// import Ellipse_center from "../../../../assets/images/EllipseCenter.svg";
+// import Ellipse_side from "../../../../assets/images/Ellipse_side.svg";
 
 const familyList = [
   {
