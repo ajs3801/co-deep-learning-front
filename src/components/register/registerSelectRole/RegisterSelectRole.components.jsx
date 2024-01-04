@@ -15,11 +15,16 @@ import Mom from '../../../assets/images/family/Mom.png';
 import Son from "../../../assets/images/family/Son.png";
 import Daughter from "../../../assets/images/family/Daughter.png";
 
+import { useNavigate } from "react-router-dom";
+
 const RegisterSelectRole = ({setRole, setSelectRole, setHeaderContent}) => {
+  const navigate = useNavigate();
+
   const onClickParent = () => {
     setHeaderContent("동거여부 선택")
     setRole("부모")
     setSelectRole(true);
+    navigate("/main/find");
   };
 
   const onClickChild = () => {

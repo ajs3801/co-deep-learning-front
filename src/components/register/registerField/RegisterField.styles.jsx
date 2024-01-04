@@ -73,6 +73,17 @@ export const RegisterButtonDisEnabled = styled.button`
   margin-bottom: 20px;
 `;
 
+export const RegisterFieldWarningLabel = styled.p`
+  color: #FF3232;
+  font-family: "Pretendard-Regular";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 14px */
+  letter-spacing: -0.28px;
+  margin-top: -10px;
+`;
+
 export const RegisterButton = styled.button`
   border: none;
   width: 80%;

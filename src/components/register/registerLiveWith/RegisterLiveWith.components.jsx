@@ -15,19 +15,28 @@ import { RegisterLiveWithImg } from "./RegisterLiveWith.styles";
 import LiveTogether from "../../../assets/images/family/LiveTogether.png";
 import LiveAlone from "../../../assets/images/family/LiveAlone.png";
 
+import { useNavigate } from "react-router-dom";
+
 const RegisterLiveWith = ({setLiveWith, setTogether, setHeaderContent}) => {
+  const navigate = useNavigate();
+
   const onClickLiveTogether = () => {
     setHeaderContent("회원가입");
     setLiveWith(true);
 
     setTogether(true);
+
+    navigate("/main/find");
   };
 
   const onClickLiveAlone = () => {
     setHeaderContent("회원가입");
     setLiveWith(true);
-    
+
     setTogether(false);
+
+    navigate("/main/find");
+
   };
 
   return (
