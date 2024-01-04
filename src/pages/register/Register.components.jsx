@@ -13,21 +13,20 @@ import { useNavigate } from "react-router-dom";
 
 import RegisterField from "../../components/register/registerField/RegisterField.components";
 import RegisterSelectRole from "../../components/register/registerSelectRole/RegisterSelectRole.components";
+import RegisterLiveWith from "../../components/register/registerLiveWith/RegisterLiveWith.components";
 
 const Register = () => {
   const [selectRole, setSelectRole] = useState(false);
+  const [liveWith, setLiveWith] = useState(false);
+
   const [role, setRole] = useState("");
-  const [headerContent, setHeaderContent] = useState("회원가입");
+  const [together, setTogether] = useState(false);
+  const [headerContent, setHeaderContent] = useState("부모/자녀 선택");
 
   const navigate = useNavigate();
 
   const onClickBackIcon = () => {
-    if (selectRole === true) {
-      setSelectRole(false);
-      setRole("");
-    } else {
-      navigate(-1);
-    }
+    navigate(-1);
   };
 
   return (
@@ -40,11 +39,9 @@ const Register = () => {
 
       {/* Content */}
       <RegisterContent>
-        { !selectRole ? (
-          <RegisterField />
-        ) : (
-          <RegisterSelectRole setRole={setRole} setSelectRole={setSelectRole}/>
-        )}
+        { (!selectRole && !liveWith) && <RegisterSelectRole setRole={setRole} setSelectRole={setSelectRole} setHeaderContent={setHeaderContent}/> }   
+        { (selectRole && !liveWith) && <RegisterLiveWith setLiveWith={setLiveWith} setTogether={setTogether} setHeaderContent={setHeaderContent}/> }   
+        { (selectRole && liveWith) && <RegisterField />}
       </RegisterContent>
     </RegisterContainer>
   )

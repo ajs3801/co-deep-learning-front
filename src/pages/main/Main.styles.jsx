@@ -46,10 +46,28 @@ export const Footer = styled.div`
   align-items: center;
 `;
 
+export const FooterContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const FooterButton = styled.img`
   border: none;
   width: 32px;
   height: 32px;
+`;
+
+export const FooterLabel = styled.p`
+  color: var(--grey-50, #8F8F8F);
+  font-family: "Pretendard-Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px;
+  padding-bottom: 3px;
 `;
 
 export const MainBellIcon = styled.img`

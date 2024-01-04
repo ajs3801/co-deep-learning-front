@@ -8,6 +8,8 @@ import {
   Footer,
   FooterButton,
   MainBellIcon,
+  FooterContainer,
+  FooterLabel,
 } from "./Main.styles";
 
 import MainFamily from "../../components/main/mainFamily/MainFamily.components";
@@ -20,6 +22,7 @@ import calendar_select from "../../assets/images/home/calendar_select.svg";
 import home_nonselect from "../../assets/images/home/home_nonselect.svg";
 import home_select from "../../assets/images/home/home_select.svg";
 import setting_nonselect from "../../assets/images/home/setting_nonselect.svg";
+import setting_select from "../../assets/images/home/setting_select.svg";
 import logo from "../../assets/images/HARU.svg";
 import bell from "../../assets/images/bell.svg";
 
@@ -72,25 +75,44 @@ const Main = () => {
       <Footer>
         {
           left ? (
-            <FooterButton src={calendar_select} onClick={onClickLeft} />
+            <FooterContainer onClick={onClickLeft}>
+              <FooterButton src={calendar_select}/>
+              <FooterLabel style={{color: "#68B38F"}}>스케쥴</FooterLabel>
+            </FooterContainer>
+            
           ) : (
-            <FooterButton src={calendar_nonselect} onClick={onClickLeft} />
+            <FooterContainer onClick={onClickLeft}>
+              <FooterButton src={calendar_nonselect} />
+              <FooterLabel>스케쥴</FooterLabel>
+            </FooterContainer>
           )
         }
 
         {
           center ? (
-            <FooterButton src={home_select} onClick={onClickCenter}/>
+            <FooterContainer onClick={onClickCenter}>
+              <FooterButton src={home_select} />
+              <FooterLabel style={{color: "#68B38F"}}>홈</FooterLabel>
+            </FooterContainer>
           ) : (
-            <FooterButton src={home_nonselect} onClick={onClickCenter}/>
+            <FooterContainer onClick={onClickCenter}>
+              <FooterButton src={home_nonselect} />
+              <FooterLabel>홈</FooterLabel>
+            </FooterContainer>
           )
         }
 
         {
           right ? (
-            <FooterButton src={setting_nonselect} onClick={onClickRight}/>
+            <FooterContainer onClick={onClickRight}>
+              <FooterButton src={setting_select} />
+              <FooterLabel style={{color: "#68B38F"}}>마이페이지</FooterLabel>
+            </FooterContainer>
           ) : (
-            <FooterButton src={setting_nonselect} onClick={onClickRight}/>
+            <FooterContainer onClick={onClickRight}>
+              <FooterButton src={setting_nonselect} />
+              <FooterLabel>마이페이지</FooterLabel>
+            </FooterContainer>
           )
         }
       </Footer>

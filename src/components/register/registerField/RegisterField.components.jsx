@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { 
   RegisterFieldContainer,
   RegisterFieldLabel,
   RegisterTextField,
   RegisterFieldHolder,
-  RegisterButton
+  RegisterButton,
+  RegisterButtonDisEnabled
 } from "./RegisterField.styles";
 
 import { useNavigate } from "react-router-dom";
@@ -13,6 +14,7 @@ import { useNavigate } from "react-router-dom";
 const RegisterField = () => {
   const navigate = useNavigate();
 
+  const [button, setButton] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [Id, setId] = useState("");
@@ -37,6 +39,15 @@ const RegisterField = () => {
   const onClickSubmit = () => {
     navigate("/main/find");
   }
+
+  useEffect(() => {
+    // verify if the fields are fine
+    if (email && password && Id && name) {
+      setButton(true);
+    } else {
+      setButton(false);
+    }
+  }, [email, password, Id, name]);
 
   return (
     <RegisterFieldContainer>
@@ -65,7 +76,13 @@ const RegisterField = () => {
         <RegisterTextField onChange={onChangeEmail} placeholder="이메일을 입력해주세요"/>
       </RegisterFieldHolder> */}
 
-      <RegisterButton onClick={onClickSubmit}>가입완료</RegisterButton>
+      {
+        button ? (
+          <RegisterButton onClick={onClickSubmit}>다음</RegisterButton>
+        ) : (
+          <RegisterButtonDisEnabled disabled onClick={onClickSubmit}>다음</RegisterButtonDisEnabled>
+        )
+      }
     </RegisterFieldContainer>
   );
 };
