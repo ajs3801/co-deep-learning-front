@@ -44,10 +44,44 @@ export const RegisterTextField = styled.input`
   letter-spacing: -0.48px;
 
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 0.5px solid black;
   background-color: var(--background, #F8F8F8);
 
   margin: auto;
+  padding-bottom: 8px;
+`;
+
+export const RegisterButtonDisEnabled = styled.button`
+  border: none;
+  width: 80%;
+  height: 56px;
+
+  border-radius: 8px;
+  background: #68B38F80;
+
+  color: #FFF;
+  font-family: "Pretendard-Regular";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 20px */
+  letter-spacing: -0.4px;
+
+  margin: auto;
+
+  margin-top: 50px;
+  margin-bottom: 20px;
+`;
+
+export const RegisterFieldWarningLabel = styled.p`
+  color: #FF3232;
+  font-family: "Pretendard-Regular";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 14px */
+  letter-spacing: -0.28px;
+  margin-top: -10px;
 `;
 
 export const RegisterButton = styled.button`

@@ -9,7 +9,7 @@ import Login from "./pages/login/Login.components";
 import Register from "./pages/register/Register.components";
 import RegisterCreate from "./pages/RegisterCreate/RegisterCreate.components";
 import QuickAnswer from "./pages/QuickAnswer/QuickAnswer.components";
-import EditPlan from "./pages/editPlan/EditPlan.components";
+import EditPlan from "./pages/EditPlan/EditPlan.components";
 import SendAnswer from "./pages/SendAnswer/SendAnswer.components";
 
 const Router = () => {

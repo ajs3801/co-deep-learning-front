@@ -7,7 +7,6 @@ import {
   MainTimeHolder,
   MainTimeHeaderContent,
   MainTimeTableTimeContent,
-  MainTimeLabel,
   TimeTableWholeContainer,
 } from "./mainTimeTable.styles";
 
