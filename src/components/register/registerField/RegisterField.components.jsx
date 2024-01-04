@@ -96,11 +96,6 @@ const RegisterField = ({setRegister, setHeaderContent}) => {
         <RegisterFieldLabel>이메일</RegisterFieldLabel>
         <RegisterTextField onChange={onChangeEmail} placeholder="이메일을 입력해주세요"/>
       </RegisterFieldHolder>
-      
-      {/* <RegisterFieldHolder>
-        <RegisterFieldLabel>주민등록번호</RegisterFieldLabel>
-        <RegisterTextField onChange={onChangeEmail} placeholder="이메일을 입력해주세요"/>
-      </RegisterFieldHolder> */}
 
       {
         button ? (
