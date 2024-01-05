@@ -1,10 +1,15 @@
 import React from "react";
 
+import { 
+  MakePlanContainer,
+
+} from "./MakePlan.styles";
+
 const MakePlan = () => {
   return (
-    <div>
+    <MakePlanContainer>
       
-    </div>
+    </MakePlanContainer>
   )
 };
 

@@ -7,14 +7,47 @@ export const MainPlanContainer = styled.div`
   height: calc(var(--vh, 1vh) * 100);
 `;
 
+export const MainPlanEditPlanContainer = styled.div`
+  width: 97%;
+  height: 32px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+`;
+
+export const MainPlanEditPlanContent = styled.button`
+  width: 90px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3px;
+  padding-right: 3px;
+`;
+
+export const MainPlanEditPlanContentImg = styled.img`
+  width: 20px;
+  height: 20px;
+`;
+
+export const MainPlanEditPlanContentLabel = styled.p`
+  color: var(--grey-70, #626262);
+  font-family: "Pretendard-Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+`;
+
 export const MainPlanMemberContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(5, minmax(36px, 56px));
   grid-template-rows: repeat(1, minmax(36px, 56px));
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 95%;
   height: 60px;
+  margin: auto;
   margin-top: 30px;
   gap: 20px;
   @media (max-width: 300px) {

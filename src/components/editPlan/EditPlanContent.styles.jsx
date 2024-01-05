@@ -2,9 +2,12 @@ import styled from "@emotion/styled";
 
 export const EditPlanContentContainer = styled.div`
   width: 100%;
+  height: calc(var(--vh, 1vh) * 100 - 56px);
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding-bottom: 20px;
+  overflow: scroll;
 `;
 
 export const EditPlanContentHeader = styled.div`

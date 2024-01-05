@@ -21,10 +21,10 @@ const EditPlanContent = () => {
 
   return (
     <EditPlanContentContainer>
-      <EditPlanContentHeader>
+      {/* <EditPlanContentHeader>
         <EditPlanThroughImage>이미지로 시간표 만들기</EditPlanThroughImage>
         <EditPlanSettingButton src={Setting}/>
-      </EditPlanContentHeader>
+      </EditPlanContentHeader> */}
 
       {/* timetable */}
       <EditPlanTimeTableContainer>
