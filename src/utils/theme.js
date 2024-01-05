@@ -10,7 +10,7 @@ export const conTheme = createTheme({
     },
     background: {
       default: "#F8F8F8",
-      paper: "#FFF",
+      paper: "#F8F8F8",
     },
   },
   typography: {

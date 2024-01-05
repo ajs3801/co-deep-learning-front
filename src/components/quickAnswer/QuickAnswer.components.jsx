@@ -8,9 +8,7 @@ import {
   QuickAnswerContentClicked,
 } from "./QuickAnswer.styles";
 
-const QuickAnswerHolder = () => {
-  const [checkedNumber, setCheckedNumber] = useState(0);
-
+const QuickAnswerHolder = ({checkedNumber, setCheckedNumber}) => {
   const [isClass, setIsClass] = useState(false);
   const [isMeeting, setIsMeeting] = useState(false);
   const [isWalk, setIsWalk] = useState(false);
@@ -171,7 +169,7 @@ const QuickAnswerHolder = () => {
 
   return (
     <QuickAnswerContentContainer>
-      <QuickAnswerContentLabel>자주하는 행동을 선택해주세요 (최대 4개)</QuickAnswerContentLabel>
+      <QuickAnswerContentLabel>평소에 자주하는 일정을 선택해주세요 (최대 4개)</QuickAnswerContentLabel>
       <QuickAnswerContentGrid>
         {isClass ? (<QuickAnswerContentClicked onClick={onClickClass}>수업</QuickAnswerContentClicked>) : (<QuickAnswerContent onClick={onClickClass}>수업</QuickAnswerContent>)}
         {isMeeting ? (<QuickAnswerContentClicked onClick={onClickMeeting}>회의</QuickAnswerContentClicked>) : (<QuickAnswerContent onClick={onClickMeeting}>회의</QuickAnswerContent>)}

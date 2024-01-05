@@ -28,6 +28,25 @@ export const NextButton = styled.button`
   margin: auto;
 `;
 
+export const NextDisEnabled = styled.button`
+  border: none;
+  width: 80%;
+  height: 56px;
+
+  border-radius: 8px;
+  background: #68B38F80;
+
+  color: #FFF;
+  font-family: "Pretendard-Regular";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 20px */
+  letter-spacing: -0.4px;
+
+  margin: auto;
+`;
+
 export const FindFamilyDownText = styled.p`
   color: #333;
   font-family: "Pretendard-Regular";

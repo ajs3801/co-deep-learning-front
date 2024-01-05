@@ -5,6 +5,7 @@ import {
   NextButton,
   FindFamilyDownText,
   FindFamilyDownCreateText,
+  NextDisEnabled,
 } from "./FindFamilyDown.styles";
 
 import { useNavigate } from "react-router-dom";
@@ -40,12 +41,18 @@ const FindFamilyDown = ({isPassword, setIsPassword, isFound, setIsFound, possibl
 
       {/* first next button */}
       {
-        (!isPassword && !isFound) && <NextButton onClick={onClickPasswordButton}>다음</NextButton>
+        (!isPassword && !isFound && possibleId) && <NextButton onClick={onClickPasswordButton}>다음</NextButton>
+      }
+      {
+        (!isPassword && !isFound && !possibleId) && <NextDisEnabled disabled>다음</NextDisEnabled>
       }
 
       {/* second next button */}
       {
-        (isPassword && !isFound) && <NextButton onClick={onClickFoundButton}>다음</NextButton>
+        (isPassword && !isFound && possibleEnter) && <NextButton onClick={onClickFoundButton}>다음</NextButton>
+      }
+      {
+        (isPassword && !isFound && !possibleEnter) && <NextDisEnabled>다음</NextDisEnabled>
       }
 
       {/* enter button */}

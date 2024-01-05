@@ -57,7 +57,7 @@ export const MainTimeTableTimeContent = styled.div`
 export const MainTimeTableContent = styled.div`
   width: 100%;
   height: 100%;
-  /* background-color: "#FFFFFF"; */
+  background-color: "#F8F8F8";
 `;
 
 export const MainTimeTableHeader = styled.div`

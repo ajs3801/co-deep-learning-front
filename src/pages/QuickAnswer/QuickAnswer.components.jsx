@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { 
   QuickAnswerContainer,
@@ -6,6 +6,7 @@ import {
   QuickAnswerContent,
   QuickAnswerBackIcon,
   QuickAnswerButton,
+  QuickAnswerDisEnabled,
 } from "./QuickAnswer.styles";
 
 import backIcon from "../../assets/images/backicon.svg";
@@ -14,6 +15,8 @@ import { useNavigate } from "react-router-dom";
 import QuickAnswerHolder from "../../components/quickAnswer/QuickAnswer.components";
 
 const QuickAnswer = () => {
+  const [checkedNumber, setCheckedNumber] = useState(0);
+
   const navigate = useNavigate();
 
   const onClickBackIcon = () => {
@@ -32,8 +35,14 @@ const QuickAnswer = () => {
       </QuickAnswerHeader>
 
       <QuickAnswerContent>
-        <QuickAnswerHolder />
-        <QuickAnswerButton onClick={onClickAnswerButton}>선택완료</QuickAnswerButton>
+        <QuickAnswerHolder checkedNumber={checkedNumber} setCheckedNumber={setCheckedNumber} />
+        {
+          (checkedNumber === 0) ? (
+            <QuickAnswerDisEnabled disabled>선택완료</QuickAnswerDisEnabled>
+          ) : (
+            <QuickAnswerButton onClick={onClickAnswerButton}>선택완료</QuickAnswerButton>
+          )
+        }
       </QuickAnswerContent>
     </QuickAnswerContainer>
   );

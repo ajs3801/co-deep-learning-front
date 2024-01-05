@@ -13,15 +13,13 @@ export const QuickAnswerContentContainer = styled.div`
 
 export const QuickAnswerContentLabel = styled.p`
   width: 95%;
-  color: #000;
+  color: var(--main_text, #317756);
   font-family: "Pretendard-Regular";
-  text-align: start;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   letter-spacing: -0.32px;
-  padding-left: 10px;
 `;
 
 export const QuickAnswerContentGrid = styled.div`
@@ -42,7 +40,7 @@ export const QuickAnswerContent = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  background: #D9D9D9;
+  background: #FFF;
 
   color: #000;
   font-family: "Pretendard-Regular";
@@ -59,7 +57,7 @@ export const QuickAnswerContentClicked = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  background: #707070;
+  background: #68B38F;
 
   color: #FFF;
   font-family: "Pretendard-Regular";
