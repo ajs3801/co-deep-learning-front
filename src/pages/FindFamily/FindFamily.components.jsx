@@ -17,6 +17,10 @@ import { useNavigate } from "react-router-dom";
 const FindFamily = () => {
   const navigate = useNavigate();
   const [isPassword, setIsPassword] = useState(false);
+  const [isFound, setIsFound] = useState(false);
+
+  const [possibleId, setPossibleId] = useState(false);
+  const [possibleEnter, setPossibleEnter] = useState(false);
 
   const onClickBackIcon = () => {
     navigate(-1);
@@ -30,8 +34,27 @@ const FindFamily = () => {
       </FindFamilyHeader>
 
       <FindFamilyContent>
-        <FindFamilyUp isPassword={isPassword} setIsPassword={setIsPassword}/>
-        <FindFamilyDown isPassword={isPassword} setIsPassword={setIsPassword}/>
+        <FindFamilyUp 
+          isPassword={isPassword} 
+          setIsPassword={setIsPassword} 
+          isFound={isFound} 
+          setIsFound={setIsFound}
+          possibleId={possibleId}
+          setPossibleId={setPossibleId}
+          possibleEnter={possibleEnter}
+          setPossibleEnter={setPossibleEnter}
+        />
+        
+        <FindFamilyDown 
+          isPassword={isPassword}  
+          setIsPassword={setIsPassword} 
+          isFound={isFound} 
+          setIsFound={setIsFound}
+          possibleId={possibleId}
+          setPossibleId={setPossibleId}
+          possibleEnter={possibleEnter}
+          setPossibleEnter={setPossibleEnter}
+        />
       </FindFamilyContent>
     </FindFamilyContainer>
   );
