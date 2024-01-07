@@ -100,7 +100,7 @@ const MainFamilyContent = ({isRead, time, message, reply, name, familyNum, profi
             reply ? (
               <MainFamilyReply>{reply}</MainFamilyReply>
             ) : (
-              <MainFamilyReply>받은 답변이 없어요</MainFamilyReply>
+              <MainFamilyReply style={{color: "#8F8F8F"}}>받은 답변이 없어요</MainFamilyReply>
             )
           }
         </MainFamilyContentHolderNonSelected>
