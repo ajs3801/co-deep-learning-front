@@ -8,7 +8,7 @@ import {
   EditPlanThroughImage,
   EditPlanSettingButton,
   EditPlanTimeTableContainer,
-
+  EditPlanContentLabel,
 } from "./EditPlanContent.styles";
 
 import EditPlanTimeTable from "./editPlanTimeTable/EditPlanTimeTable.components";
@@ -26,6 +26,7 @@ const EditPlanContent = () => {
 
   return (
     <EditPlanContentContainer>
+      <EditPlanContentLabel>시간 블록을 눌러 일정을 추가하거나 수정할 수 있어요</EditPlanContentLabel>
       {/* <EditPlanContentHeader>
         <EditPlanThroughImage>이미지로 시간표 만들기</EditPlanThroughImage>
         <EditPlanSettingButton src={Setting}/>
@@ -34,7 +35,7 @@ const EditPlanContent = () => {
       {/* timetable */}
       {
         showAddPlan ? (
-          <EditPlanTimeTableContainer style={{height: "calc(var(--vh, 1vh) * 100 - 390px - 56px)"}}>
+          <EditPlanTimeTableContainer style={{height: "calc(var(--vh, 1vh) * 100 - 390px - 56px -17px)"}}>
             <EditPlanTimeTable setShowAddPlan={setShowAddPlan} setTodo={setTodo} setStartTimeIndex={setStartTimeIndex} startTimeIndex={startTimeIndex} setEndTimeIndex={setEndTimeIndex} endTimeIndex={endTimeIndex}/>
           </EditPlanTimeTableContainer>
         ) : (

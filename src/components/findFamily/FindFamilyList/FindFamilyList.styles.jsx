@@ -44,7 +44,7 @@ export const FindFamilyListContent = styled.div`
   align-items: center;
 `;
 
-export const FindFamilyListContentImg = styled.div`
+export const FindFamilyListContentImg = styled.img`
   width: 50px;
   height: 50px;
   border-radius: 50px;

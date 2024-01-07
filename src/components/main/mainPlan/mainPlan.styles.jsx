@@ -22,13 +22,15 @@ export const MainPlanEditPlanContent = styled.button`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 8px;
+  border: 1px solid var(--grey-30, #BCBCBC);
 `;
 
 export const MainPlanEditPlanContentImg = styled.img`
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 `;
 
 export const MainPlanEditPlanContentLabel = styled.p`
@@ -50,6 +52,7 @@ export const MainPlanMemberContainer = styled.div`
   height: 60px;
   margin: auto;
   margin-top: 30px;
+  margin-bottom: 20px;
   gap: 20px;
   @media (max-width: 300px) {
     gap: 10px;
@@ -65,7 +68,7 @@ export const MainPlanMemberHolder = styled.div`
   align-items: center;
 `;
 
-export const MainPlanMember = styled.div`
+export const MainPlanMember = styled.img`
   width: 50px;
   height: 50px;
   border-radius: 50px;
@@ -93,6 +96,8 @@ export const MainPlanLabelContainer = styled.div`
 `;
 
 export const MainPlanLabel = styled.p`
+  width: 100%;
+  height: 28px;
   color: #000;
   font-family: "Pretendard-Regular";
   font-size: 16px;
@@ -107,10 +112,12 @@ export const MainPlanLabel = styled.p`
 
 export const MainPlanLabelBottom = styled.div`
   width: 100%;
+  height: 32px;
   display: flex;
   justify-content: start;
   align-items: center;
   padding-left: 10px;
+  padding-bottom: 5px;
   gap: 10px;
 `;
 

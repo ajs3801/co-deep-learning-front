@@ -5,9 +5,11 @@ import {
   EditPlanHeader,
   EditBackIcon,
   EditContent,
+  EditPlanHeaderLogo
 } from "./EditPlan.styles";
 
 import backicon from "../../assets/images/backicon.svg";
+import logo from "../../assets/images/HARU.svg";
 
 import EditPlanContent from "../../components/editPlan/EditPlanContent.components";
 
@@ -25,6 +27,7 @@ const EditPlan = () => {
       {/* header */}
       <EditPlanHeader>
         <EditBackIcon onClick={onClickBackIcon} src={backicon}/>
+        <EditPlanHeaderLogo src={logo}/>
       </EditPlanHeader>
 
       {/* content */}

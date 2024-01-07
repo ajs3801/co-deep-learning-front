@@ -31,6 +31,11 @@ export const EditPlanHeader = styled.div`
   letter-spacing: -0.4px;
 `;
 
+export const EditPlanHeaderLogo = styled.img`
+  width: 80px;
+  height: 17px;
+`;
+
 export const EditBackIcon = styled.img`
   width: 32px;
   height: 32px;

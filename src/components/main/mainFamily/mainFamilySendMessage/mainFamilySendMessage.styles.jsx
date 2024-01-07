@@ -45,6 +45,7 @@ export const MainFamilySendMessageEmptyProfile = styled.div`
   border-color: #D2D2D2;
   background-color: var(--grey-white, #FFF);
   border-width: 1;
+  border-spacing: 5px;
 `;
 
 export const MainFamilySendMessageProfile = styled.img`
@@ -129,4 +130,48 @@ export const MainFamilySendMessageSendItButton = styled.button`
   line-height: normal;
 `;
 
+export const SendMessageModalContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  gap: 10px;
+`;
 
+export const SendMessageModalFirstLabel = styled.p`
+  color: var(--grey-black, #1F1F1F);
+  font-family: "Pretendard-Regular";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0px;
+`;
+
+export const SendMessageModalSecondLabel = styled.p`
+  color: var(--grey-70, #626262);
+  font-family: "Pretendard-Regular";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0px;
+`;
+
+export const SendMessageModalButton = styled.button`
+  margin-top: 20px;
+  width: 80%;
+  height: 40px;
+  border-radius: 8px;
+  background: var(--main, #68B38F);
+  color: #FFF;
+  font-family: "Pretendard-Regular";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 20px */
+  letter-spacing: -0.4px;
+  border: none;
+`;

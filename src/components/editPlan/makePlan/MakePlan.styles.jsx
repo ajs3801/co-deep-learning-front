@@ -191,6 +191,7 @@ export const MakePlanDeleteButton = styled(DeleteIcon)`
   height: 24px;
   border: none;
   z-index: 100;
+  fill: #626262;
 `;
 
 export const MakePlanCompleteButton = styled.button`

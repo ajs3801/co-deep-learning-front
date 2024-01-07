@@ -7,9 +7,21 @@ export const EditPlanContentContainer = styled.div`
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  overflow: scroll;
   gap: 10px;
   padding-bottom: 20px;
   margin-top: 0px;
+`;
+
+export const EditPlanContentLabel = styled.p`
+  width: 95%;
+  color: var(--main_text, #317756);
+  font-family: "Pretendard-Regular";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.32px;
 `;
 
 export const EditPlanContentHeader = styled.div`

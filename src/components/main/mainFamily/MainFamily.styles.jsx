@@ -11,7 +11,7 @@ export const MainFamilyHolder = styled.div`
 export const MainFamilyContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(120px, 168px));
-  grid-template-rows: repeat(${props => props.gridRow}, 88px);
+  grid-template-rows: repeat(${props => props.gridRow}, 118px);
   gap: 10px;
   row-gap: 40px;
   margin-top: 30px;

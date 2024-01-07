@@ -25,12 +25,27 @@ import planImg from "../../../assets/images/edit.svg";
 
 import { useNavigate } from "react-router-dom";
 
-const currentFamily = [
-  "강유진",
-  "강혜진",
-  "강민진",
-  "강성택",
-  "이영선",
+const familyMember = [
+  {
+    imgSrc: "https://fastly.picsum.photos/id/427/200/200.jpg?hmac=s_shz8jLgIAiRoZ7FP0MA88RuD5sS0xJIGNmuTZLvs8",
+    name: "강유진"
+  },
+  {
+    imgSrc: "https://fastly.picsum.photos/id/768/200/200.jpg?hmac=CZCVsqJECKhkvl5gzeCA0O5iSMmRn_RVFzVrREOE7ws",
+    name: "강성택"
+  },
+  {
+    imgSrc: "https://fastly.picsum.photos/id/381/200/200.jpg?hmac=IXUwJuDt0wy3ChotTk60XiBv1aDqt3EbITLD8z4671w",
+    name: "이영선"
+  },
+  {
+    imgSrc: "https://fastly.picsum.photos/id/765/200/200.jpg?hmac=9zejtkA8_vjTeGNBqUBylUb3CoNHoPEFVUoLWpLMonQ",
+    name: "이영선"
+  },
+  {
+    imgSrc: "https://fastly.picsum.photos/id/230/200/200.jpg?hmac=8tI9ISupCMivMI7f7Q6i24FcYAg812XUEYJFZtaXp_8",
+    name: "강혜진"
+  },
 ]
 
 const MainPlan = () => {
@@ -38,13 +53,17 @@ const MainPlan = () => {
 
   const [selectedFamily, setSelectedFamily] = useState("강유진");
   const [backgroundColor, setBackgroundColor] = useState("#D9B8A7");
-  const [date, setDate] = useState("월");
-  const [startTime, setStartTime] = useState("10:00");
-  const [endTime, setEndTime] = useState("12:00");
-  const [todo, setTodo] = useState("회사");
+  const [date, setDate] = useState("");
+  const [startTime, setStartTime] = useState("");
+  const [endTime, setEndTime] = useState("");
+  const [todo, setTodo] = useState("");
 
   const onClickEditPlan = () => {
     navigate("/main/plan");
+  };
+
+  const onClickMember = (familyName) => {
+    setSelectedFamily(familyName);
   };
 
   return (
@@ -52,11 +71,11 @@ const MainPlan = () => {
       {/* member */}
       <MainPlanMemberContainer>
         {
-          currentFamily.map((member) => {
+          familyMember.map((member) => {
             return (
-              <MainPlanMemberHolder>
-                <MainPlanMember />
-                <MainPlanMemberName>{member}</MainPlanMemberName>
+              <MainPlanMemberHolder onClick={() => {onClickMember(member.name)}}>
+                <MainPlanMember src={member.imgSrc}/>
+                <MainPlanMemberName>{member.name}</MainPlanMemberName>
               </MainPlanMemberHolder>
             )
           })
@@ -83,7 +102,7 @@ const MainPlan = () => {
 
       {/* content */}
       <MainPlanContent>
-        <MainTimeTable />
+        <MainTimeTable setTodo={setTodo} setDate={setDate} setStartTime={setStartTime} setEndTime={setEndTime} />
       </MainPlanContent>
     </MainPlanContainer>
   )

@@ -7,7 +7,7 @@ export const EditPlanHolder = styled.div`
   overflow: scroll;
   align-items: center;
   justify-content: start;
-  margin-top: 30px;
+  margin-top: 0px;
 `;
 
 export const TimeTableWholeContainer = styled.div`
