@@ -17,7 +17,7 @@ export const MainPlanEditPlanContainer = styled.div`
 `;
 
 export const MainPlanEditPlanContent = styled.button`
-  width: 90px;
+  width: 100px;
   height: 32px;
   display: flex;
   justify-content: space-between;

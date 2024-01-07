@@ -52,7 +52,7 @@ const MainPlan = () => {
   const navigate = useNavigate();
 
   const [selectedFamily, setSelectedFamily] = useState("강유진");
-  const [backgroundColor, setBackgroundColor] = useState("#D9B8A7");
+  const [backgroundColor, setBackgroundColor] = useState("#F8F8F8");
   const [date, setDate] = useState("");
   const [startTime, setStartTime] = useState("");
   const [endTime, setEndTime] = useState("");
@@ -94,15 +94,15 @@ const MainPlan = () => {
       <MainPlanLabelContainer>
         <MainPlanLabel>{selectedFamily}님의 일정</MainPlanLabel>
         <MainPlanLabelBottom>
-          <MainPlanLabelBottomColor style={{backgroundColor: `${backgroundColor}`}} />
-          <MainPlanLabelBottomDate>{date} {startTime} ~ {endTime}</MainPlanLabelBottomDate>
+          {backgroundColor && <MainPlanLabelBottomColor style={{backgroundColor: `${backgroundColor}`}} />}
+          {date && <MainPlanLabelBottomDate>{date} {startTime} ~ {endTime}</MainPlanLabelBottomDate>}
           <MainPlanLabelBottomPlan>{todo}</MainPlanLabelBottomPlan>
         </MainPlanLabelBottom>
       </MainPlanLabelContainer>
 
       {/* content */}
       <MainPlanContent>
-        <MainTimeTable setTodo={setTodo} setDate={setDate} setStartTime={setStartTime} setEndTime={setEndTime} />
+        <MainTimeTable setTodo={setTodo} setDate={setDate} setStartTime={setStartTime} setEndTime={setEndTime} setBackgroundColor={setBackgroundColor} />
       </MainPlanContent>
     </MainPlanContainer>
   )

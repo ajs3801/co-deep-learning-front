@@ -77,13 +77,13 @@ export const MainRightEditProfileContentImg = styled.img`
 export const MainRightEditProfileContentLabel = styled.p`
   color: var(--grey-70, #626262);
   font-family: "Pretendard-Regular";
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 
   @media (max-width: 320px) {
-    font-size: 14px;
+    font-size: 12px;
   }
 `;
 

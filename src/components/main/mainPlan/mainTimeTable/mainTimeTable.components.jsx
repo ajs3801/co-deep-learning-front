@@ -1012,12 +1012,13 @@ const times = [
   "24",
 ]
 
-const MainTimeTable = ({setTodo, setDate, setStartTime, setEndTime}) => {
-  const onClickContent = (todo, index) => {
+const MainTimeTable = ({setTodo, setDate, setStartTime, setEndTime, setBackgroundColor}) => {
+  const onClickContent = (bgColor, todo, index) => {
     setTodo(todo);
     setDate(days[parseInt(index/33) + 1]);
     setStartTime("10:00");
     setEndTime("12:00");
+    setBackgroundColor(bgColor);
     console.log(todo);
   }
 
@@ -1044,7 +1045,7 @@ const MainTimeTable = ({setTodo, setDate, setStartTime, setEndTime}) => {
 
           {/* time block */}
           {
-            timeTable.map((time, index) => {return <MainTimeTableContent onClick={() => {onClickContent(time.content, index)}} style={{backgroundColor: `${time.backgroundColor}`}}></MainTimeTableContent>})
+            timeTable.map((time, index) => {return <MainTimeTableContent onClick={() => {onClickContent(time.backgroundColor, time.content, index)}} style={{backgroundColor: `${time.backgroundColor}`}}></MainTimeTableContent>})
           }
         </MainTimeTableContainer>
       </TimeTableWholeContainer>
