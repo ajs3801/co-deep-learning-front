@@ -68,6 +68,22 @@ export const MainPlanMemberHolder = styled.div`
   align-items: center;
 `;
 
+export const MainPlanMemberClicked = styled.div`
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-size: cover; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const MainPlanMemberClickedImg = styled.img`
+  width: 32px;
+  height: 32px;
+  z-index: 100;
+`;
+
 export const MainPlanMember = styled.img`
   width: 50px;
   height: 50px;

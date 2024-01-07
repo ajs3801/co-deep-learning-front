@@ -17,10 +17,13 @@ import {
   MainPlanEditPlanContent,
   MainPlanEditPlanContentImg,
   MainPlanEditPlanContentLabel,
+  MainPlanMemberClicked,
+  MainPlanMemberClickedImg,
 } from "./mainPlan.styles";
 
 import MainTimeTable from "./mainTimeTable/mainTimeTable.components";
 
+import check from "../../../assets/images/check.svg";
 import planImg from "../../../assets/images/edit.svg";
 
 import { useNavigate } from "react-router-dom";
@@ -51,7 +54,7 @@ const familyMember = [
 const MainPlan = () => {
   const navigate = useNavigate();
 
-  const [selectedFamily, setSelectedFamily] = useState("강유진");
+  const [selectedFamily, setSelectedFamily] = useState("");
   const [backgroundColor, setBackgroundColor] = useState("#F8F8F8");
   const [date, setDate] = useState("");
   const [startTime, setStartTime] = useState("");
@@ -92,7 +95,13 @@ const MainPlan = () => {
 
       {/* Label */}
       <MainPlanLabelContainer>
-        <MainPlanLabel>{selectedFamily}님의 일정</MainPlanLabel>
+        {
+          selectedFamily ? (
+            <MainPlanLabel>{selectedFamily}님의 일정</MainPlanLabel>
+          ) : (
+            <MainPlanLabel>원하는 사람의 프로필을 눌러보아요</MainPlanLabel>
+          )
+        }
         <MainPlanLabelBottom>
           {backgroundColor && <MainPlanLabelBottomColor style={{backgroundColor: `${backgroundColor}`}} />}
           {date && <MainPlanLabelBottomDate>{date} {startTime} ~ {endTime}</MainPlanLabelBottomDate>}
@@ -102,7 +111,7 @@ const MainPlan = () => {
 
       {/* content */}
       <MainPlanContent>
-        <MainTimeTable setTodo={setTodo} setDate={setDate} setStartTime={setStartTime} setEndTime={setEndTime} setBackgroundColor={setBackgroundColor} />
+        { selectedFamily && <MainTimeTable setTodo={setTodo} setDate={setDate} setStartTime={setStartTime} setEndTime={setEndTime} setBackgroundColor={setBackgroundColor} />}
       </MainPlanContent>
     </MainPlanContainer>
   )
