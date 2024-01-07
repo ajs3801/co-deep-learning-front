@@ -26,21 +26,21 @@ export const TimeTableWholeContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  border: 1px solid #A29A9A;
-  border-radius: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--grey-30, #BCBCBC);
 `;
 
 export const MainTimeTableContainer = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(8, 12%);
-  grid-template-rows: repeat(39, 17px);
+  grid-template-rows: repeat(33, 17px);
   justify-content: center;
   column-gap: 0.3px;
   row-gap: 0.3px;
   grid-auto-flow: column;
   padding-bottom: 20px;
-  padding-top: 5px;
+  padding-top: 0.5px;
 
 `;
 
@@ -73,8 +73,8 @@ export const MainTimeTableHeader = styled.div`
   row-gap: 0.3px;
   justify-content: center;
   gap: 4px;
+  border-bottom: 0.3px solid var(--grey-10, #E9E9E9);
 
-  border-bottom: 1px solid #A29A9A;
 `;
 
 export const MainTimeHeaderContent = styled.div`

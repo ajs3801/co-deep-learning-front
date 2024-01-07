@@ -24,3 +24,7 @@ input, textarea, button {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}

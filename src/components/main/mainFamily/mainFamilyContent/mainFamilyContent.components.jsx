@@ -17,7 +17,6 @@ const MainFamilyContent = ({isRead, time, message, familyNum, profile}) => {
   const [backgroundColor, setBackgroundColor] = useState("#E8ECEA");
   const [textColor, setTextColor] = useState("#797979");
 
-
   const onClickFamilyContent = () => {
     let duplicatedFamily = JSON.parse(JSON.stringify(family));
     console.log(family);

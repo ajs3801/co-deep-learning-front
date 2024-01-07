@@ -6,6 +6,7 @@ export const EditPlanHolder = styled.div`
   width: 100%;
   overflow: scroll;
   align-items: center;
+  justify-content: start;
   margin-top: 30px;
 `;
 
@@ -15,8 +16,8 @@ export const TimeTableWholeContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  border: 1px solid #A29A9A;
-  border-radius: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--grey-30, #BCBCBC);
   padding-top: 10px;
   padding-bottom: 10px;
 `;
@@ -25,7 +26,7 @@ export const EditPlanTableContainer = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(8, 12%);
-  grid-template-rows: repeat(39, 17px);
+  grid-template-rows: repeat(33, 17px);
   justify-content: center;
   column-gap: 0.3px;
   row-gap: 0.3px;
@@ -65,7 +66,7 @@ export const EditPlanTableHeader = styled.div`
   justify-content: center;
   gap: 4px;
 
-  border-bottom: 1px solid #A29A9A;
+  border-bottom: 0.3px solid var(--grey-10, #E9E9E9);
 `;
 
 export const EditPlanHeaderContent = styled.div`

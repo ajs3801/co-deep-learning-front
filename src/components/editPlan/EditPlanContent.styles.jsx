@@ -5,9 +5,11 @@ export const EditPlanContentContainer = styled.div`
   height: calc(var(--vh, 1vh) * 100 - 56px);
   display: flex;
   flex-direction: column;
+  justify-content: start;
+  align-items: center;
   gap: 10px;
   padding-bottom: 20px;
-  overflow: scroll;
+  margin-top: 0px;
 `;
 
 export const EditPlanContentHeader = styled.div`
@@ -47,4 +49,5 @@ export const EditPlanTimeTableContainer = styled.div`
   display: flex;
   width: 92%;
   margin: auto;
+  margin-top: 0px;
 `;

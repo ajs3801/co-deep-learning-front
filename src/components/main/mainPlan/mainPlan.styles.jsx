@@ -9,10 +9,11 @@ export const MainPlanContainer = styled.div`
 
 export const MainPlanEditPlanContainer = styled.div`
   width: 97%;
-  height: 32px;
+  height: 48px;
   display: flex;
   justify-content: end;
   align-items: center;
+  margin-top: 10px;
 `;
 
 export const MainPlanEditPlanContent = styled.button`
@@ -21,8 +22,8 @@ export const MainPlanEditPlanContent = styled.button`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 3px;
-  padding-right: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
 `;
 
 export const MainPlanEditPlanContentImg = styled.img`
@@ -82,7 +83,7 @@ export const MainPlanMemberName = styled.p`
 
 export const MainPlanLabelContainer = styled.div`
   width: 95%;
-  height: 78px;
+  height: 73px;
   display: flex;
   flex-direction: column;
   border-radius: 8px;
@@ -99,7 +100,9 @@ export const MainPlanLabel = styled.p`
   font-weight: 600;
   line-height: normal;
   padding-left: 10px;
+  margin: 0px;
   margin-top: 10px;
+  margin-bottom: 7px;
 `;
 
 export const MainPlanLabelBottom = styled.div`

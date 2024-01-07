@@ -970,174 +970,6 @@ const timeTable = [
     id: "33",
     backgroundColor: "#F8F8F8",
   },
-  {
-    id: "11",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "12",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "13",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "14",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "15",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "16",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "17",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "18",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "19",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "20",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "21",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "22",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "23",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "24",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "25",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "26",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "27",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "28",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "29",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "30",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "31",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "32",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "33",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "21",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "22",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "23",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "24",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "25",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "26",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "27",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "28",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "29",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "30",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "31",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "32",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "33",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "28",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "29",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "30",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "31",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "32",
-    backgroundColor: "#F8F8F8",
-  },
-  {
-    id: "33",
-    backgroundColor: "#F8F8F8",
-  },
 ];
 
 const days = [
@@ -1145,8 +977,6 @@ const days = [
 ]
 
 const times = [
-  "7",
-  "",
   "8",
   "",
   "9",
@@ -1180,10 +1010,6 @@ const times = [
   "23",
   "",
   "24",
-  "",
-  "1",
-  "",
-  "2",
 ]
 
 const MainTimeTable = () => {
