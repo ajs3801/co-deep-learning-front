@@ -12,19 +12,37 @@ export const FindFamilyDownContainer = styled.div`
 
 export const NextButton = styled.button`
   border: none;
-  width: 95%;
-  height: 48px;
+  width: 80%;
+  height: 56px;
 
-  border-radius: 4px;
-  background-color: #D9D9D9;
+  border-radius: 8px;
+  background: var(--main, #68B38F);
 
-  color: #000;
-  text-align: center;
+  color: #FFF;
   font-family: "Pretendard-Regular";
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-weight: 700;
+  line-height: 100%; /* 20px */
+  letter-spacing: -0.4px;
+  margin: auto;
+`;
+
+export const NextDisEnabled = styled.button`
+  border: none;
+  width: 80%;
+  height: 56px;
+
+  border-radius: 8px;
+  background: #68B38F80;
+
+  color: #FFF;
+  font-family: "Pretendard-Regular";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 20px */
+  letter-spacing: -0.4px;
 
   margin: auto;
 `;
@@ -39,6 +57,8 @@ export const FindFamilyDownText = styled.p`
   letter-spacing: -0.32px;
   margin: 0px;
 `;
+
+
 
 export const FindFamilyDownCreateText = styled.p`
   color: #666;

@@ -13,11 +13,11 @@ import {
 const timeTable = [
   {
     id: "1",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "2",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "3",
@@ -42,119 +42,119 @@ const timeTable = [
   },
   {
     id: "7",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "8",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "9",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "10",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "11",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "12",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "13",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "14",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "15",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "16",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "17",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "18",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "19",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "20",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "21",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "22",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "23",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "24",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "25",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "26",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "27",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "28",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "29",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "30",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "31",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "32",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "33",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "1",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "2",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "3",
@@ -179,119 +179,119 @@ const timeTable = [
   },
   {
     id: "7",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "8",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "9",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "10",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "11",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "12",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "13",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "14",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "15",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "16",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "17",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "18",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "19",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "20",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "21",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "22",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "23",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "24",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "25",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "26",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "27",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "28",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "29",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "30",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "31",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "32",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "33",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "1",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "2",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "3",
@@ -316,119 +316,119 @@ const timeTable = [
   },
   {
     id: "7",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "8",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "9",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "10",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "11",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "12",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "13",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "14",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "15",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "16",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "17",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "18",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "19",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "20",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "21",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "22",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "23",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "24",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "25",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "26",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "27",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "28",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "29",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "30",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "31",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "32",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "33",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "1",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "2",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "3",
@@ -453,119 +453,119 @@ const timeTable = [
   },
   {
     id: "7",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "8",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "9",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "10",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "11",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "12",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "13",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "14",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "15",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "16",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "17",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "18",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "19",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "20",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "21",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "22",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "23",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "24",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "25",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "26",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "27",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "28",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "29",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "30",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "31",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "32",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "33",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "1",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "2",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "3",
@@ -590,119 +590,119 @@ const timeTable = [
   },
   {
     id: "7",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "8",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "9",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "10",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "11",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "12",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "13",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "14",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "15",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "16",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "17",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "18",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "19",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "20",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "21",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "22",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "23",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "24",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "25",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "26",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "27",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "28",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "29",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "30",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "31",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "32",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "33",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "1",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "2",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "3",
@@ -727,119 +727,119 @@ const timeTable = [
   },
   {
     id: "7",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "8",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "9",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "10",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "11",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "12",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "13",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "14",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "15",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "16",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "17",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "18",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "19",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "20",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "21",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "22",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "23",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "24",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "25",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "26",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "27",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "28",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "29",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "30",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "31",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "32",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "33",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "1",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "2",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "3",
@@ -864,279 +864,111 @@ const timeTable = [
   },
   {
     id: "7",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "8",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "9",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "10",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "11",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "12",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "13",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "14",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "15",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "16",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "17",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "18",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "19",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "20",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "21",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "22",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "23",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "24",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "25",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "26",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "27",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "28",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "29",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "30",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "31",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "32",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
   {
     id: "33",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "11",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "12",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "13",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "14",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "15",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "16",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "17",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "18",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "19",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "20",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "21",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "22",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "23",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "24",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "25",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "26",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "27",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "28",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "29",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "30",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "31",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "32",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "33",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "21",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "22",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "23",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "24",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "25",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "26",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "27",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "28",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "29",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "30",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "31",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "32",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "33",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "28",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "29",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "30",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "31",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "32",
-    backgroundColor: "#FFFFFF",
-  },
-  {
-    id: "33",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F8F8F8",
   },
 ];
 
@@ -1144,45 +976,7 @@ const days = [
   "", "월", "화", "수", "목", "금", "토", "일"
 ]
 
-// const times = [
-//   "8:00",
-//   "8:30",
-//   "9:00",
-//   "9:30",
-//   "10:00",
-//   "10:30",
-//   "11:00",
-//   "11:30",
-//   "12:00",
-//   "12:30",
-//   "13:00",
-//   "13:30",
-//   "14:00",
-//   "14:30",
-//   "15:00",
-//   "15:30",
-//   "16:00",
-//   "16:30",
-//   "17:00",
-//   "17:30",
-//   "18:00",
-//   "18:30",
-//   "19:00",
-//   "19:30",
-//   "20:00",
-//   "20:30",
-//   "21:00",
-//   "21:30",
-//   "22:00",
-//   "22:30",
-//   "23:00",
-//   "23:30",
-//   "24:00",
-// ]
-
 const times = [
-  "7",
-  "",
   "8",
   "",
   "9",
@@ -1216,17 +1010,15 @@ const times = [
   "23",
   "",
   "24",
-  "",
-  "1",
-  "",
-  "2",
 ]
 
-const MainTimeTable = () => {
-  const [content, setContent] = useState("시간을 눌러보아요")
-
-  const onClickContent = (todo) => {
-    setContent(todo);
+const MainTimeTable = ({setTodo, setDate, setStartTime, setEndTime, setBackgroundColor}) => {
+  const onClickContent = (bgColor, todo, index) => {
+    setTodo(todo);
+    setDate(days[parseInt(index/33) + 1]);
+    setStartTime("10:00");
+    setEndTime("12:00");
+    setBackgroundColor(bgColor);
     console.log(todo);
   }
 
@@ -1253,7 +1045,7 @@ const MainTimeTable = () => {
 
           {/* time block */}
           {
-            timeTable.map((time) => {return <MainTimeTableContent onClick={() => {onClickContent(time.content)}} style={{backgroundColor: `${time.backgroundColor}`}}></MainTimeTableContent>})
+            timeTable.map((time, index) => {return <MainTimeTableContent onClick={() => {onClickContent(time.backgroundColor, time.content, index)}} style={{backgroundColor: `${time.backgroundColor}`}}></MainTimeTableContent>})
           }
         </MainTimeTableContainer>
       </TimeTableWholeContainer>

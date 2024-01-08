@@ -51,6 +51,7 @@ export const FooterContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 25%;
 `;
 
 export const FooterButton = styled.img`

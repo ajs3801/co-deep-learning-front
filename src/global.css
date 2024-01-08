@@ -14,3 +14,7 @@ input {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}

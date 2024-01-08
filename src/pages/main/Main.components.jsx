@@ -53,15 +53,15 @@ const Main = () => {
     setRight(true);
   };
 
-  const onClickEdit = () => {
-
+  const onClickBell = () => {
+    navigate("/main/doAnswer");
   };
 
   return (
     <MainContainer>
       <Header>
         {
-          center && <MainBellIcon onClick={onClickEdit} src={bell}/>
+          center && <MainBellIcon onClick={onClickBell} src={bell}/>
         }
         <HeaderLogo src={logo}/>
       </Header>

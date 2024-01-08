@@ -1,24 +1,27 @@
 import React, { useEffect, useState } from "react";
 
 import { 
-  MainFamilyContentHolder,
+  MainFamilyContentHolderNonSelected,
+  MainFamilyContentHolderSelected,
   MainFamilyProfile,
   MainFamilyTime,
-  MainFamilyMessage
+  MainFamilyMessage,
+  MainFamilyReply,
 } from "./mainFamilyContent.styles";
 
 import { useRecoilState } from "recoil";
 import { SelectFamily } from "../../../../recoil/recoil";
 
 // familyNum은 userID가 되어도됨
-const MainFamilyContent = ({isRead, time, message, familyNum, profile}) => {
+const MainFamilyContent = ({isRead, time, message, reply, name, familyNum, profile}) => {
   const [family, setFamily] = useRecoilState(SelectFamily);
   const [borderColor, setBorderColor] = useState("#FFF");
-  const [backgroundColor, setBackgroundColor] = useState("#E8ECEA");
-  const [textColor, setTextColor] = useState("#797979");
 
+  const [isSelect, setIsSelect] = useState(false);
 
   const onClickFamilyContent = () => {
+    setIsSelect(!isSelect);
+
     let duplicatedFamily = JSON.parse(JSON.stringify(family));
     console.log(family);
 
@@ -33,6 +36,7 @@ const MainFamilyContent = ({isRead, time, message, familyNum, profile}) => {
 
       // delete it
       duplicatedFamily.splice(index, 1);
+
     } else {
       // push it
       duplicatedFamily.push(familyNum);
@@ -45,23 +49,63 @@ const MainFamilyContent = ({isRead, time, message, familyNum, profile}) => {
   useEffect(() => {
     if (!isRead) {
       setBorderColor("#68B374")
-      setBackgroundColor("#68B38F");
-      setTextColor("#FFF");
     }
-  }, []);
+
+    if (isSelect) {
+      setBorderColor("#BCBCBC")
+    } else {
+      if (isRead === false) {
+        setBorderColor("#68B374")
+      } else {
+        setBorderColor("#FFF")
+      }
+    }
+  }, [isSelect]);
 
   return (
-    <MainFamilyContentHolder style={{border: `1px solid ${borderColor}`}} onClick={onClickFamilyContent}>
-      <MainFamilyProfile src={profile} />
-      <MainFamilyTime style={{backgroundColor: `${backgroundColor}`, color:`${textColor}`}}>{time}</MainFamilyTime>
-      {
-        message ? (
-          <MainFamilyMessage>{message}</MainFamilyMessage>
-        ) : (
-          <MainFamilyMessage style={{color: "#BABABA"}}>등록된 일정이 없어요</MainFamilyMessage>
-        )
-      }
-    </MainFamilyContentHolder>
+    (
+      isSelect ? (
+        <MainFamilyContentHolderSelected style={{border: `1px solid ${borderColor}`}} onClick={onClickFamilyContent}>
+          <MainFamilyProfile src={profile} />
+          <MainFamilyTime>{name} {time}</MainFamilyTime>
+          {
+            message ? (
+              <MainFamilyMessage>{message}</MainFamilyMessage>
+            ) : (
+              <MainFamilyMessage style={{color: "#BABABA"}}>일정이 없어요</MainFamilyMessage>
+            )
+          }
+
+          {
+            reply ? (
+              <MainFamilyReply>{reply}</MainFamilyReply>
+            ) : (
+              <MainFamilyReply>받은 답변이 없어요</MainFamilyReply>
+            )
+          }
+        </MainFamilyContentHolderSelected>
+      ) : (
+        <MainFamilyContentHolderNonSelected style={{border: `1px solid ${borderColor}`}} onClick={onClickFamilyContent}>
+          <MainFamilyProfile src={profile} />
+          <MainFamilyTime>{name} {time}</MainFamilyTime>
+          {
+            message ? (
+              <MainFamilyMessage>{message}</MainFamilyMessage>
+            ) : (
+              <MainFamilyMessage style={{color: "#BABABA"}}>일정이 없어요</MainFamilyMessage>
+            )
+          }
+
+          {
+            reply ? (
+              <MainFamilyReply>{reply}</MainFamilyReply>
+            ) : (
+              <MainFamilyReply style={{color: "#8F8F8F"}}>받은 답변이 없어요</MainFamilyReply>
+            )
+          }
+        </MainFamilyContentHolderNonSelected>
+      )
+    )
   );
 };
 

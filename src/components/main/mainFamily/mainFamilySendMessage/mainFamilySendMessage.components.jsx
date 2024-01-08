@@ -12,6 +12,10 @@ import {
   QuestionDropDownSvg,
   QuestionDropDown,
   QuestionDropDownContent,
+  SendMessageModalContainer,
+  SendMessageModalFirstLabel,
+  SendMessageModalSecondLabel,
+  SendMessageModalButton,
 } from "./mainFamilySendMessage.styles";
 
 import { useRecoilState } from "recoil";
@@ -19,6 +23,8 @@ import { SelectFamily } from "../../../../recoil/recoil";
 
 import dropdown from "../../../../assets/images/dropdown.svg";
 import dropup from "../../../../assets/images/dropup.svg";
+
+import ModalLayout from "../modalLayout/ModalLayout.components";
 
 // import Ellipse_center from "../../../../assets/images/EllipseCenter.svg";
 // import Ellipse_side from "../../../../assets/images/Ellipse_side.svg";
@@ -71,7 +77,18 @@ const MainFamilySendMessage = () => {
   const [isDropDown, setIsDropDown] = useState(false);
   const [questionContent, setQuestionContent] = useState("뭐하는지 물어보기");
   const [family, setFamily] = useRecoilState(SelectFamily);
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => {
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
 
+  const onClickSendMessage = () => {
+    // send Message
+    setOpen(true);
+  };
   return (
     <MainFamilySendMessageContainer>
       {/* Profile container */}
@@ -119,9 +136,25 @@ const MainFamilySendMessage = () => {
       </MainFamilySendMessageQuestionBox>
 
       {/* Send Question */}
-      <MainFamilySendMessageSendItButton>
+      <MainFamilySendMessageSendItButton onClick={onClickSendMessage}>
         질문 보내기
       </MainFamilySendMessageSendItButton>
+
+      <ModalLayout modalOpen={open} handleModalClose={handleClose}>
+        <SendMessageModalContainer>
+          <SendMessageModalFirstLabel>
+            질문을 보냈어요!
+          </SendMessageModalFirstLabel>
+
+          <SendMessageModalSecondLabel>
+            답변은 푸시알림으로 확인할 수 있어요
+          </SendMessageModalSecondLabel>
+
+          <SendMessageModalButton onClick={handleClose}>
+            확인
+          </SendMessageModalButton>
+        </SendMessageModalContainer>
+      </ModalLayout>
     </MainFamilySendMessageContainer>
   )
 };

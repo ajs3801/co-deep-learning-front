@@ -9,6 +9,7 @@ export const RegisterHeader = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #F8F8F8;
   border-bottom: 0.5px solid #C7C7C7;
   color: var(--grey-black, #1F1F1F);
   text-align: center;

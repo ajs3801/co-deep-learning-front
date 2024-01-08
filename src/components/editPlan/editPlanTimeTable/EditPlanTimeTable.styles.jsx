@@ -4,7 +4,10 @@ export const EditPlanHolder = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  overflow: scroll;
   align-items: center;
+  justify-content: start;
+  margin-top: 0px;
 `;
 
 export const TimeTableWholeContainer = styled.div`
@@ -13,8 +16,8 @@ export const TimeTableWholeContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  border: 1px solid #A29A9A;
-  border-radius: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--grey-30, #BCBCBC);
   padding-top: 10px;
   padding-bottom: 10px;
 `;
@@ -22,15 +25,14 @@ export const TimeTableWholeContainer = styled.div`
 export const EditPlanTableContainer = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(8, 11%);
-  grid-template-rows: repeat(39, minmax(10px, 20px));
+  grid-template-columns: repeat(8, 12%);
+  grid-template-rows: repeat(33, 17px);
   justify-content: center;
-  gap: 5px;
-  row-gap: 2px;
+  column-gap: 0.3px;
+  row-gap: 0.3px;
   grid-auto-flow: column;
   padding-bottom: 20px;
   padding-top: 5px;
-
 `;
 
 export const EditPlanTableTimeContent = styled.div`
@@ -39,23 +41,32 @@ export const EditPlanTableTimeContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  border-bottom: 0.3px solid var(--grey-10, #E9E9E9);
+
 `;
 
 export const EditPlanTableContent = styled.div`
   width: 100%;
   height: 100%;
-  background-color: "#FFFFFF";
+  background-color: "#F8F8F8";
+  border-left: 0.3px solid var(--grey-10, #E9E9E9);
+  border-right: 0.3px solid var(--grey-10, #E9E9E9);
+  border-bottom: 0.3px solid var(--grey-10, #E9E9E9);
 `;
 
 export const EditPlanTableHeader = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(8, 11%);
-  grid-template-rows: repeat(1, minmax(20px, 30px));
+  grid-template-rows: repeat(1, 23px);
   justify-content: center;
-  gap: 5px;
+  column-gap: 0.3px;
+  row-gap: 0.3px;
+  justify-content: center;
+  gap: 4px;
 
-  border-bottom: 1px solid #A29A9A;
+  border-bottom: 0.3px solid var(--grey-10, #E9E9E9);
 `;
 
 export const EditPlanHeaderContent = styled.div`

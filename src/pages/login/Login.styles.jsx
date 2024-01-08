@@ -17,7 +17,8 @@ export const LoginHeader = styled.div`
   height: 56px;
   position: absolute;
   top: 0px;
-  background: #D9D9D9;
+  background: #F8F8F8;
+  border-bottom: 0.5px solid #C7C7C7;
   display: flex;
   justify-content: center;
   align-items: center;
