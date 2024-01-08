@@ -62,6 +62,28 @@ export const LoginTextField = styled.input`
   padding-bottom: 8px;
 `;
 
+export const LoginButtonDisabled = styled.button`
+  border: none;
+  width: 80%;
+  height: 56px;
+
+  border-radius: 8px;
+  background: #68B38F80;
+
+  color: #FFF;
+  font-family: "Pretendard-Regular";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 20px */
+  letter-spacing: -0.4px;
+
+  margin: auto;
+
+  margin-top: 100px;
+  margin-bottom: 20px;
+`;
+
 export const LoginButton = styled.button`
   border: none;
   width: 80%;
@@ -81,4 +103,15 @@ export const LoginButton = styled.button`
 
   margin-top: 100px;
   margin-bottom: 20px;
+`;
+
+export const LoginContentdWarningLabel = styled.p`
+  color: #FF3232;
+  font-family: "Pretendard-Regular";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 14px */
+  letter-spacing: -0.28px;
+  margin-top: -10px;
 `;
