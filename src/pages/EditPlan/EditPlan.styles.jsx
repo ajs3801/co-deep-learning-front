@@ -45,6 +45,21 @@ export const EditBackIcon = styled.img`
   z-index: 100;
 `;
 
+export const EditCompleteButton = styled.div`
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  color: #8F8F8F;
+  text-align: center;
+  font-family: "Pretendard-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 20px */
+  letter-spacing: -0.4px;
+`;
+
 export const EditContent = styled.div`
   margin-top: 56px;
   width: 100%;

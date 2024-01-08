@@ -5,7 +5,8 @@ import {
   EditPlanHeader,
   EditBackIcon,
   EditContent,
-  EditPlanHeaderLogo
+  EditPlanHeaderLogo,
+  EditCompleteButton
 } from "./EditPlan.styles";
 
 import backicon from "../../assets/images/backicon.svg";
@@ -20,6 +21,10 @@ const EditPlan = () => {
 
   const onClickBackIcon = () => {
     navigate(-1);
+  };  
+
+  const onClickComplete = () => {
+    navigate(-1);
   };
 
   return (
@@ -28,6 +33,7 @@ const EditPlan = () => {
       <EditPlanHeader>
         <EditBackIcon onClick={onClickBackIcon} src={backicon}/>
         <EditPlanHeaderLogo src={logo}/>
+        <EditCompleteButton onClick={onClickComplete}>수정완료</EditCompleteButton>
       </EditPlanHeader>
 
       {/* content */}

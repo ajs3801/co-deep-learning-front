@@ -8,7 +8,7 @@ import {
   LandingLoginButton,
 } from "./Landing.styles";
 
-import Mainlogo from "../../assets/images/HARUMainLogo.png";
+import Mainlogo from "../../assets/images/HARUMain.png";
 
 import { useNavigate } from "react-router-dom";
 import Main from "../main/Main.components";

@@ -38,15 +38,6 @@ const familyList = [
     reply: "",
     isRead: true,
   },
-  {
-    familyNum: 3,
-    name: "강혜진",
-    profile: "https://fastly.picsum.photos/id/562/200/200.jpg?hmac=F4ylYRNFPH6rDzYo48_NUieJXXI2yaMl9ElwGeFQHZo",
-    time: "02:24",
-    message: "쉬고 있어요",
-    reply: "밖에서 밥 먹고 들어가요",
-    isRead: true,
-  },
 ]
 
 const MainFamily = () => {

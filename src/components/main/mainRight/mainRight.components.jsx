@@ -41,10 +41,6 @@ const familyMember = [
     imgSrc: "https://fastly.picsum.photos/id/765/200/200.jpg?hmac=9zejtkA8_vjTeGNBqUBylUb3CoNHoPEFVUoLWpLMonQ",
     name: "이영선"
   },
-  {
-    imgSrc: "https://fastly.picsum.photos/id/230/200/200.jpg?hmac=8tI9ISupCMivMI7f7Q6i24FcYAg812XUEYJFZtaXp_8",
-    name: "강혜진"
-  },
 ]
 
 const MainRight = () => {

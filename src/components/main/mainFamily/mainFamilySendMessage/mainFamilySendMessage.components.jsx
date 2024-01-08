@@ -48,12 +48,6 @@ const familyList = [
     time: "12:08",
     message: "수업듣고 있어요",
   },
-  {
-    familyNum: 3,
-    profile: "https://fastly.picsum.photos/id/562/200/200.jpg?hmac=F4ylYRNFPH6rDzYo48_NUieJXXI2yaMl9ElwGeFQHZo",
-    time: "02:24",
-    message: "쉬고 있어요",
-  },
 ]
 
 const emptyArray = [
