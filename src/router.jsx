@@ -11,6 +11,8 @@ import RegisterCreate from "./pages/RegisterCreate/RegisterCreate.components";
 import QuickAnswer from "./pages/QuickAnswer/QuickAnswer.components";
 import EditPlan from "./pages/EditPlan/EditPlan.components";
 import SendAnswer from "./pages/SendAnswer/SendAnswer.components";
+import DoAnswer from "./pages/doAnswer/DoAnswer.components";
+import ChangeFamilyName from "./pages/ChangeFamilyName/ChangeFamilyName.components";
 
 const Router = () => {
   return (
@@ -22,6 +24,8 @@ const Router = () => {
         <Route path="/main/answer" element={<QuickAnswer />}/>
         <Route path="/main/plan" element={<EditPlan />} />
         <Route path="/main/request" element={<SendAnswer />}/>
+        <Route path="/main/doAnswer" element={<DoAnswer />}/>
+        <Route path="/main/change" element={<ChangeFamilyName />}/>
         <Route path="/register" element={<Register />} />
         <Route path="/register/create" element={<RegisterCreate />}/>
         <Route path="/login" element={<Login />} />

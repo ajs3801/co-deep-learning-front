@@ -54,6 +54,9 @@ const MainRight = () => {
     navigate("/main/answer");
   };
 
+  const onClickChangeFamilyName = () => {
+    navigate("/main/change");
+  }
 
   return (
     <MainRightContainer>
@@ -91,7 +94,7 @@ const MainRight = () => {
         <MainRightButton onClick={onClickChangeQuickAnswer}>
           자주하는 일 변경 
         </MainRightButton>
-        <MainRightButton>
+        <MainRightButton onClick={onClickChangeFamilyName}>
           가족 이름 변경
         </MainRightButton>
       </MainRightButtonContainer>

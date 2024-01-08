@@ -109,6 +109,7 @@ export const MainPlanLabelContainer = styled.div`
   background-color: #FFF;
   margin: auto;
   margin-top: 10px;
+  margin-bottom: 10px;
 `;
 
 export const MainPlanLabel = styled.p`
@@ -169,5 +170,4 @@ export const MainPlanContent = styled.div`
   margin: auto;
   display: flex;
   justify-content: center;
-  margin-top: 10px;
 `;
