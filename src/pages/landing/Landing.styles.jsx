@@ -8,13 +8,15 @@ export const LandingContainer = styled.div`
   justify-content: center;
 `;
 
-export const LandingLogo = styled.div`
-  width: 210px;
-  height: 210px;
-  background-color: #D9D9D9;
+export const LandingLogo = styled.img`
+  width: 300px;
+  height: 143px;
   margin: auto;
   margin-top: 50px;
   margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   display: flex;
   justify-content: center;
   align-items: center;

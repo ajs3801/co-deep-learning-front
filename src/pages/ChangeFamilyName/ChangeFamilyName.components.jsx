@@ -29,10 +29,6 @@ const familyMember = [
     imgSrc: "https://fastly.picsum.photos/id/381/200/200.jpg?hmac=IXUwJuDt0wy3ChotTk60XiBv1aDqt3EbITLD8z4671w",
     name: "이영선"
   },
-  {
-    imgSrc: "https://fastly.picsum.photos/id/765/200/200.jpg?hmac=9zejtkA8_vjTeGNBqUBylUb3CoNHoPEFVUoLWpLMonQ",
-    name: "이영선"
-  },
 ]
 
 const ChangeFamilyName = () => {

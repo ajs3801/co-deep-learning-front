@@ -25,7 +25,7 @@ const Register = () => {
   const [role, setRole] = useState("");
   const [together, setTogether] = useState(false);
 
-  const [headerContent, setHeaderContent] = useState("부모/자녀 선택");
+  const [headerContent, setHeaderContent] = useState("회원가입");
 
   const navigate = useNavigate();
 
