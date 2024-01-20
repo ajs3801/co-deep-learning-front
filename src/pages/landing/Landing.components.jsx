@@ -11,7 +11,6 @@ import {
 import Mainlogo from "../../assets/images/HARUMain.png";
 
 import { useNavigate } from "react-router-dom";
-import Main from "../main/Main.components";
 
 const Landing = () => {
   const navigate = useNavigate();
